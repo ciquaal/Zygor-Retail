@@ -3,7 +3,7 @@ One Zero
 Latest versions of this famous add-on.
 All product names, logos, and brands are property of their respective owners.
 
----- DISCLAIMER ----
+----- DISCLAIMER -----
 This copy of Zygor is a free copy, so some aspects of the addon will not work.
 This has been provided to you for utility only.
 
