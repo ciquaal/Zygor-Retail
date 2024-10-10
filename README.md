@@ -1,3 +1,0 @@
-# Zygor-Retail
-
-OneZero: Test
