@@ -2641,17 +2641,17 @@ Click Here to Load the "Full Zones (Story + Side Quests)" Leveling Guide |confir
 step
 talk Tender Xina##189364
 |tip He walks around this area.
-accept Garden Variety##72189 |goto Thaldraszus/0 77.43,67.31
+accept Garden Variety##72189 |goto Valdrakken/0 77.48,66.85
 step
 talk Gryrmpech##187300
-|tip Inside the open building.
+|tip Inside the pavillion.
 turnin Garden Variety##72189 |goto Thaldraszus/0 37.86,75.46
 accept Azeroth Pest Control##66134 |goto Thaldraszus/0 37.86,75.46
 step
 kill 8 Agitated Seedling##187687 |q 66134/1 |goto Thaldraszus/0 37.77,75.26
 step
 talk Gryrmpech##187300
-|tip Inside the open building.
+|tip Inside the pavillion.
 turnin Azeroth Pest Control##66134 |goto Thaldraszus/0 37.86,75.47
 accept The Gardener's Apprentice##66135 |goto Thaldraszus/0 37.86,75.47
 step
@@ -2664,7 +2664,7 @@ Locate Lord Basilton |q 66135/1 |goto Thaldraszus/0 38.87,74.17
 |tip You will find him in the last object you click, after searching them all.
 step
 talk Gryrmpech##187300
-|tip Inside the open building.
+|tip Inside the pavillion.
 turnin The Gardener's Apprentice##66135 |goto Thaldraszus/0 37.86,75.46
 turnin One Drakonid's Junk##66278 |goto Thaldraszus/0 37.86,75.46
 accept Elemental Extract##66136 |goto Thaldraszus/0 37.86,75.46
@@ -2672,7 +2672,7 @@ accept Lashing Out##66137 |goto Thaldraszus/0 37.86,75.46
 accept New Kid on the Clock##66279 |goto Thaldraszus/0 37.86,75.46
 step
 clicknpc Lord Basilton##187400
-|tip Inside the open building.
+|tip Inside the pavillion.
 Let Basilton Sniff Your Hand |q 66279/1 |goto Thaldraszus/0 37.88,75.44
 step
 Kill enemies around this area
@@ -2699,7 +2699,7 @@ Kill enemies around this area
 Slay #10# Lashers |q 66137/1 |goto Thaldraszus/0 34.45,72.41
 step
 talk Gryrmpech##187300
-|tip Inside the open building.
+|tip Inside the pavillion.
 turnin Elemental Extract##66136 |goto Thaldraszus/0 37.86,75.46
 turnin Lashing Out##66137 |goto Thaldraszus/0 37.86,75.46
 accept Flame at Last##66139 |goto Thaldraszus/0 37.86,75.46
@@ -2711,16 +2711,16 @@ use the Concentrated Essence of Water##191676
 kill Blazing Inferno##189043 |q 66139/2 |goto Thaldraszus/0 35.63,75.23
 step
 talk Gryrmpech##187300
-|tip Inside the open building.
+|tip Inside the pavillion.
 turnin Flame at Last##66139 |goto Thaldraszus/0 37.86,75.46
 accept Carry On, Basilton##66412 |goto Thaldraszus/0 37.86,75.46
 step
 clicknpc Lord Basilton##187400
-|tip Inside the open building.
+|tip Inside the pavillion.
 Speak with Lord Basilton |q 66412/1 |goto Thaldraszus/0 37.88,75.44
 step
 talk Gryrmpech##187300
-|tip Inside the open building.
+|tip Inside the pavillion.
 turnin Carry On, Basilton##66412 |goto Thaldraszus/0 37.86,75.46
 step
 use Lord Basilton##194098

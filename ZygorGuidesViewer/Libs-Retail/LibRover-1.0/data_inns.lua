@@ -592,7 +592,7 @@ data.basenodes.inns = {
 
 	["Shrine of Two Moons"]={
 		{name="Summer's Rest",f=1,faction="H",npc="Madam Vee Luo",npcid=62996,x=68.42,y=47.72},
-		{name="Hall of the Crescent Moon",f=2,faction="H",npc="Brewmaster Skye",npcid=63008,x=60.30,y=77.09,region="shrine2moon_east"},
+		{name="Hall of the Crescent Moon",f=2,faction="H",npc="Brewmaster Skye",npcid=63008,x=60.30,y=77.09},
 	},
 
 	["The Veiled Stair"]={

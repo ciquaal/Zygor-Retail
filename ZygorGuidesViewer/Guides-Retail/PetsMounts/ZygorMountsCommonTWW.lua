@@ -2,6 +2,72 @@ local ZygorGuidesViewer=ZygorGuidesViewer
 if not ZygorGuidesViewer then return end
 if ZGV:DoMutex("PetsMountsCTWW") then return end
 ZygorGuidesViewer.GuideMenuTier = "SHA"
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Achievement Mounts\\Coldflame Tempest",{
+author="support@zygorguides.com",
+description="This guide will help you earn the Coldflame Tempest mount.",
+mounts={463133},
+mounttype='Flying',
+startlevel=80,
+keywords={"TWW","The War Within","Achievement Mounts","Flying","Achievement","A Cool Twenty Years","Celebration Event"},
+patch='110002',
+},[[
+step
+Join _Mount Mania_ at the 20th Anniversary Celebration Event
+|tip Stay within range of the event stage.
+|tip Mount up with the same mount as Mount Mania Rep Abigail Cyrildotr during the active event.
+|tip The name of the mount will be floating above Abigail's head.
+Match one mount during _Mount Mania_ |achieve 40976/1 |goto Tanaris/0 63.00,51.34
+step
+Join _Fashion Frenzy_ at the 20th Anniversary Celebration Event
+|tip Stay within range of the circular event stage.
+|tip Watch above Althaea's head for the theme of the fashion competition.
+|tip Use the Visiting Warpweaver NPCs around the edge of the circular stage, or a transmogrification mount to create your outfit.
+|tip Once instructed to do so, go to the small oval table and click a ribbon to gain the voting interface.
+|tip Target and vote for 5 players with the transmogrifications that you like.
+|tip Repeat the event 4 times, for a total of 20 votes at the Fashion Frenzy.
+Cast 20 votes during _Fashion Frenzy_ |achieve 40976/2 |goto Tanaris/0 63.43,48.95
+step
+click Pet Box##455795
+|tip If the Pet Box isn't at this location, you may already have a Pet Mirror in your inventory or bank.
+collect Pet Mirror##224157 |goto Tanaris/0 62.02,50.11
+step
+Summon a Pet of Your Choice
+use Pet Mirror##224157
+|tip Use it on your pet.
+|tip Explore the different celebration areas.
+Use a Pet Disguiser to Look Like Your Pet and Explore the Celebration Area |achieve 40976/3
+step
+Click a Floating Celebration Balloon
+|tip Ride the balloon until you get the achievement.
+Ride One of the Celebration Balloons |achieve 40976/4 |goto Tanaris/0 64.16,50.18
+step
+Join _Story Time_ at the 20th Anniversary Celebration Event
+|tip Stay within range of the event stage.
+|tip As Lorewalker Cho tells his story, look for the extra action button to pop up to react.
+|tip Repeat the event as many times as you need to have reacted 50 times.
+React to Lorewalker Cho's stories |achieve 40976/5 |goto Tanaris/0 64.07,51.75
+step
+Kill a World Boss
+|tip Kill Azuregos, Lord Kazzak, Lethon, Emeriss, Taerar, or Ysondre.
+|tip You will need help with this.
+|tip Look on your map to find these bosses.
+|tip They are not in Tanaris.
+Defeat at least one of the world bosses Listed Above |achieve 40976/6
+step
+Kill Doomwalker, Sha of Anger, and Archavon the Stonewatcher
+|tip Find them all in Tanaris.
+|tip You may need help with this.
+|tip Press 'I' ind a group in the Group Finder, or join a group at the boss's locations.
+Defeat all the Gatecrasher world bosses |achieve 40976/7
+step
+talk Chromie##226368
+Select _"Count me in! <Queue for The Codex of Chromie.>"_ |gossip 122968 |noautogossip
+Enter "The Codex of Chromie" Scenario |scenariostart The Codex of Chromie##2555 |goto Tanaris/0 62.56,50.03 |n
+|tip This will queue you for the scenario and start forming a group.
+|tip It may take some time, especially if you are DPS.
+|tip Join the scenario and complete it.
+Complete "The Codex of Chromie" Scenario |achieve 40976/8
+]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Achievement Mounts\\Diamond Mechsuit",{
 author="support@zygorguides.com",
 description="These crystal-powered mechsuits are the epitome of Earthen Federation technology.",
@@ -31,30 +97,12 @@ patch='110002',
 },[[
 step
 Earn the "Glory of the Delver" Achievement |achieve 40438 |n
-|tip Form a group and complete the Achievement "Glory of the Delver".
+|tip Go solo, or form a group, and complete the Achievement "Glory of the Delver".
 collect Ivory Goliathus##224415 |or
 '|complete hasmount(452779) |or
 step
 use Ivory Goliathus##224415
 learnmount Ivory Goliathus##452779
-]])
-ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Achievement Mounts\\Machine Defense Unit 1-11",{
-author="support@zygorguides.com",
-description="One of many such mechsuits designed to guard the Machine. After years of faithful service it is no longer suited for combat. It does make for an impressive conveyance, though.",
-mounts={452779},
-mounttype='Flying',
-startlevel=80,
-keywords={"TWW","The War Within","Achievement Mounts"},
-patch='110002',
-},[[
-step
-Earn the "It's Not Much, But It's Honest Work" Achievement |achieve 40662 |n
-|tip Form a group and complete the Achievement "It's Not Much, But It's Honest Work".
-collect Machine Defense Unit 1-11##224415 |or
-'|complete hasmount(452779) |or
-step
-use Machine Defense Unit 1-11##224415
-learnmount Machine Defense Unit 1-11##452779
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Achievement Mounts\\Shadowed Swarmite",{
 author="support@zygorguides.com",
@@ -86,6 +134,8 @@ patch='110002',
 step
 Earn the "Khaz Algar Glyph Hunter" Achievement |achieve 40702 |n
 |tip Discover the Skyriding Glyphs in Khaz Algar.
+|tip Use the "Khaz Algar Glyph Hunter" Achievement Guide to accomplish this.
+Click Here to Open the "Khaz Algar Glyph Hunter" Achievement Guide |confirm |loadguide "Achievement Guides\\The War Within Achievements\\Hallowfall\\Exploration\\Khaz Algar Glyph Hunter"
 collect Swarmite Skyhunter##223267 |or
 '|complete hasmount(447195) |or
 step
@@ -199,8 +249,75 @@ step
 use Beledar's Spawn##223315
 learnmount Beledar's Spawn##448941
 ]])
-ZGV.BETASTART()
-ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Dauntless Imperial Lynx",{
+author="support@zygorguides.com",
+description="This lynx's barding has had most of its insignia ripped off. The one remaining tag reads, 'Dauntless'.",
+mounts={448979},
+mounttype='Ground',
+startlevel=80,
+keywords={"TWW","The War Within","Dropped Mounts","Hallowfall","Flying"},
+patch='110002',
+},[[
+step
+Complete the Khaz Algar Main Story Campaign
+|tip You need to complete this to unlock necessary content.
+|tip Complete this using the Khaz Algar Leveling Guides.
+Click Here to Open the Khaz Algar Leveing Guides (Full Zones) |confirm |loadguide "Leveling Guides\\The War Within (70-80)\\Full Zones (Story + Side Quests)\\Intro & Isle of Dorn (Full Zone)"
+'|only if not completedq(79573)
+step
+Complete the The War Within Campaign
+|tip You need to complete this to unlock necessary content.
+|tip Complete this using The War Within Campaign Guides.
+Click Here to Open The War Within Campaign Guide |confirm |loadguide "Leveling Guides\\The War Within (70-80)\\Story Campaigns\\The War Within Campaign"
+'|only if not completedq(83503)
+step
+ding 80
+step
+label "DAUNTLESS_IMPERIAL_LYNX_RETURN"
+Complete quests and daily quests in Hallowfall
+|tip The mount item is looted from _Lamplighter Supply Satchels_ and possibly Delve chests.
+|tip Use the Spreading the Light Keyflame Weekly Quests guide to acquire these satchels.
+Click Here to load the Spreading the Light Keyflame Weekly Quests guide |confirm |loadguide "Daily Guides\\The War Within (70-80)\\Spreading the Light Keyflame Weekly Quests" |or
+'|complete hasmount(448941) |or
+'|complete itemcount(228741) >= 1
+step
+use Lamplighter Supply Satchel##228741
+collect Dauntless Imperial Lynx##223318 |goto Hallowfall/0 16.60,61.20 |or
+Click Here to Return to the Beginning of the Guide |confirm  |next "DAUNTLESS_IMPERIAL_LYNX_RETURN"
+'|complete hasmount(448941) |or
+step
+use Dauntless Imperial Lynx##223318
+learnmount Dauntless Imperial Lynx##448979
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Achievement Mounts\\Machine Defense Unit 1-11",{
+author="support@zygorguides.com",
+description="One of many such mechsuits designed to guard the Machine. After years of faithful service it is no longer suited for combat. It does make for an impressive conveyance, though.",
+mounts={448188},
+mounttype='Flying',
+startlevel=80,
+keywords={"TWW","The War Within","Achievement Mounts"},
+patch='110002',
+},[[
+step
+talk Gnawbles##216164
+|tip Inside the building.
+accept Gearing Up for Trouble##83333 |goto The Ringing Deeps/0 47.66,35.29 |or
+'|complete hasmount(448188) |or
+step
+Complete the Scenario
+|tip Complete this using the _Awakening the Machine_ Daily Guide.
+|tip You may have to complete the scenario more than once to obtain the mount.
+|tip You can only complete this once per week.
+Click Here to Open the _Awakening the Machine_ Daily Guide |confirm |loadguide "Daily Guides\\The War Within (70-80)\\Awakening the Machine" |or
+'|complete hasmount(448188) |or
+step
+click the Awakened Cache##464938
+|tip This is the chest near Speaker Kuldas, reward for completing the scenario.
+collect Machine Defense Unit 1-11##223269
+step
+use Machine Defense Unit 1-11##223269
+learnmount Machine Defense Unit 1-11##448188
+]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Dropped Mounts\\Ol' Mole Rufus",{
 author="support@zygorguides.com",
 description="Wiser than words can say and still quick on his feet. He just gets a lil' tired sometimes.",
@@ -400,6 +517,8 @@ patch='110002',
 },[[
 step
 Unlock the Earthen race |achieve 40307
+|tip Use the Full Zone versions of the "War Within" Leveling guides to accomplish this.
+Click Here to Open the "Intro & Isle of Dorn (Full Zone)" Leveling guide |confirm |loadguide "Leveling Guides\\The War Within (70-80)\\Full Zones (Story + Side Quests)\\Intro & Isle of Dorn (Full Zone)"
 step
 collect Reins of the Slatestone Ramolith##223572 |or
 '|complete hasmount(449415) |or

@@ -200,8 +200,8 @@ function ActionBar:SetActionButtonsQueued()
 				table.insert(actions,{"emote",goal.script})
 			elseif goal.script and ZGV.db.profile.actionbar_quest then
 				table.insert(actions,{"script",goal.script})
-			elseif goal.macro and ZGV.db.profile.actionbar_quest then
-				table.insert(actions,{"macro",goal.macro})
+			elseif goal.macrosrc and ZGV.db.profile.actionbar_quest then
+				table.insert(actions,{"macro",goal.macrosrc})
 			elseif goal.petaction and ZGV.db.profile.actionbar_quest then
 				local num,name,tex = ZGV.FindPetActionInfo(goal)
 				if num and name then
@@ -492,8 +492,12 @@ function ActionBar:SetButton(btype,object,fallbackname,counter,sticky)
 		--_,macro_texture = GetMacroInfo(object)
 		zygor_texture_key = "EMOTE"
 		macro_tooltip = macro_text:match("\"(.*)\"") -- /run DoEmote("blah") -> blah
-	elseif btype=="script" or btype=="macro" then
+	elseif btype=="script" then
 		macro_text = "/run "..object
+		macro_tooltip = object
+		zygor_texture_key = "SCRIPT"
+	elseif btype=="macro" then
+		macro_text = object
 		macro_tooltip = object
 		zygor_texture_key = "SCRIPT"
 	elseif btype=="zygor" then

@@ -3094,6 +3094,11 @@ function Goal:CheckVisited()  -- AKA arrived
 	if not self.map then return end
 
 	local isvisited = self:IsCompleteAs("goto")  -- complete me like one of your French gotos, Jack
+
+	if isvisited and self.force_sticky_saved then
+		self:SaveStickyComplete()
+	end
+	
 	if isvisited and not self.was_visited then
 		if self.status=="incomplete" then return end -- abort if it's a red incomplete line. These get really "visited" when they're complete.
 		self:OnVisited()
@@ -4340,7 +4345,7 @@ function Goal:SaveStickyComplete()
 	if not self.force_sticky or not self.force_sticky_saved then return end
 	ZGV.db.char.saved_sticky_goals = ZGV.db.char.saved_sticky_goals or {}
 	local stickies = ZGV.db.char.saved_sticky_goals
-	stickies[self.parentStep.parentGuide.title] = stickies[self.parentStep.parentGuide] or {}
+	stickies[self.parentStep.parentGuide.title] = stickies[self.parentStep.parentGuide.title] or {}
 	stickies[self.parentStep.parentGuide.title][self.parentStep.num.."/"..self.num] = self:IsComplete()
 end
 

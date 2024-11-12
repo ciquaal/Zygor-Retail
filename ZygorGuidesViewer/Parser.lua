@@ -682,7 +682,7 @@ local ConditionEnv = {
 	end,
 	hasmount = function(mountident)
 		if not mountident then return end
-		if ZGV.IsRetail then
+		if ZGV.IsRetail or ZGV.IsClassicCATA then
 			local mountID = C_MountJournal.GetMountFromSpell(mountident)
 			if mountID then
 				local name, spell, _, _, _, _, _, _, _, _, isCollected = C_MountJournal.GetMountInfoByID(mountID)

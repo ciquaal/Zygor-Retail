@@ -510,7 +510,7 @@ Select _"I'm told you could get me into the private Machine Speaker speakeasy."_
 Speak to Bevrusi |q 79544/1 |goto Dornogal/0 55.61,50.23
 step
 talk Bevrusi##217072
-Select _"What are you looking to trade?"_ |gossip 121412
+Select _"What are you looking to trade?"_ |gossip 123489
 See What Bevrusi Will Trade |q 79544/2 |goto Dornogal/0 55.61,50.23
 step
 talk Bevrusi##217072

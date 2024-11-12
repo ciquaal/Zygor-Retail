@@ -353,20 +353,6 @@ data.basenodes.FloorCrossings = --[[LIBROVER]] {
 			"The Veiled Stair/0 50.6,40.4 -x- The Veiled Stair/5 63.1,86.4", -- The Ancient Passage
 			"The Veiled Stair/0 57.3,13.6 -x- The Veiled Stair/5 77.6,36.7", -- The Ancient Passage
 		},
-		["Shrine of Two Moons"] = {
-			"Shrine of Two Moons/1 22.1,54.4 <radius:5> -x- Shrine of Two Moons/2 27.8,80.6 <radius:5> <region:shrine2moon_west>", -- west staircase
-			"Shrine of Two Moons/1 77.5,42.6 <radius:5> -x- Shrine of Two Moons/2 74.4,70.3 <radius:5> <region:shrine2moon_east>", -- east staircase
-
-			"Shrine of Two Moons/1 36.6,21.7 <radius:10> -x- Shrine of Two Moons/2 38.3,36.6 <radius:10> <region:shrine2moon_west>", -- west hall
-			"Shrine of Two Moons/1 58.0,18.5 <radius:10> -x- Shrine of Two Moons/2 55.8,30.0 <radius:10> <region:shrine2moon_east>", -- east hall
-
-			"Shrine of Two Moons/2 47.0,77.0 <radius:5> <region:shrine2moon_west> -to- Shrine of Two Moons/1 48.6,64.5 <radius:5>", -- west balcony jump
-			"Shrine of Two Moons/2 55.4,73.1 <radius:5> <region:shrine2moon_east> -to- Shrine of Two Moons/1 54.0,62.0 <radius:5>", -- east balcony jump
-
-			"Shrine of Two Moons/1 53.8,87.0 <nofly:1> -x- Vale of Eternal Blossoms 61.5,18.8",  -- main door
-			"Shrine of Two Moons/1 26.8,80.7 <nofly:1> -x- Vale of Eternal Blossoms 59.1,17.9",  -- west door
-			"Shrine of Two Moons/1 77.4,69.0 <nofly:1> -x- Vale of Eternal Blossoms 63.5,17.0",  -- east door
-		},
 		["Isle of Thunder"] = {
 			"Isle of Thunder/0 54.6,29.1 -x- Isle of Thunder/1 73.1,51.3 {template:cave}", --Ghostly Veins
 			"Isle of Thunder/0 49.3,25.5 -x- Isle of Thunder/1 38.8,27.1 {template:cave}", --Ghostly Veins

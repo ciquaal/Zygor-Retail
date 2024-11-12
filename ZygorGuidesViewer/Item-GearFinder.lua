@@ -94,7 +94,7 @@ function GearFinder:IsValidDungeon(dungeon, instanceId, diff)
 
 	-- handle future rejects
 	if dungeon.minLevel and dungeon.minLevel > ItemScore.playerlevel then return false, true, ident, dungeon.maxScaleLevel, mythic, "need higher level" end
-	--if dungeon.min_ilevel and dungeon.min_ilevel > ItemScore.playeritemlvl then return false, true, ident, maxScaleLevel, mythic, "need higher item level "..dungeon.min_ilevel end
+	if dungeon.min_ilevel and dungeon.min_ilevel > ItemScore.playeritemlvl then return false, true, ident, maxScaleLevel, mythic, "need higher item level "..dungeon.min_ilevel end
 
 	-- attunements
 	if dungeon.attunement_achieve then

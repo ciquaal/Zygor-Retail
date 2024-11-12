@@ -5534,1154 +5534,774 @@ patch='50004',
 condition_suggested=function() return isevent("Hallow's End") end,
 description="To earn this achievement, you will visit the various candy buckets around WoW zones.",
 },[[
+stickystart "Use_Handful_Of_Treats"
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12361 |goto Durotar/0 51.54,41.58
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12366 |goto Orgrimmar/1 53.92,78.93
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28992 |goto Azshara/0 57.10,50.16
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12400 |goto Winterspring/0 59.83,51.21
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28994 |goto Felwood/0 44.58,28.98
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12377 |goto Ashenvale/0 73.96,60.60
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28953 |goto Ashenvale/0 50.25,67.27
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28958 |goto Ashenvale/0 38.65,42.34
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28989 |goto Ashenvale/0 13.00,34.10
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12378 |goto Stonetalon Mountains/0 50.39,63.79
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##29009 |goto Stonetalon Mountains/0 66.50,64.19
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##29003 |goto Northern Barrens/0 62.51,16.60
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##29002 |goto Northern Barrens/0 56.21,40.03
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12374 |goto Northern Barrens/0 49.51,57.91
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12396 |goto Northern Barrens/0 67.33,74.66
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##12367 |goto Thunder Bluff/0 45.62,64.91
+accept Candy Bucket##12383 |goto Dustwallow Marsh/0 36.78,32.43
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##12362 |goto Mulgore/0 46.78,60.41
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##29005 |goto Southern Barrens/0 40.70,69.31
-step
-click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##29004 |goto Southern Barrens/0 39.29,20.10
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##28993 |goto Desolace/0 56.72,50.12
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##12381 |goto Desolace/0 24.08,68.29
-step
-click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##28996 |goto Feralas/0 41.45,15.68
-step
-click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##28998 |goto Feralas/0 51.97,47.64
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##12386 |goto Feralas/0 74.83,45.14
-step
-talk Zidormi##128607
-|tip She is at the top of the ramp leading from Un'Goro Crater to Silithus.
-Select _"Can you show me what Silithus was like before the Wound in the World?"_
-Travel to the Past |complete ZGV.InPhase('Old Silithus') |goto Silithus/0 78.93,21.97 |q 12401 |future
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##12401 |goto Silithus/0 55.47,36.79
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##29018 |goto Un'Goro Crater/0 55.26,62.11
-step
-click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##29014 |goto Tanaris/0 55.70,60.96
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##12399 |goto Tanaris/0 52.56,27.10
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Upstairs inside the building.
 accept Candy Bucket##12398 |goto Dustwallow Marsh/0 41.86,74.09
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##12383 |goto Dustwallow Marsh/0 36.78,32.43
+accept Candy Bucket##29005 |goto Southern Barrens/0 40.70,69.31
+step
+click Candy Bucket##208144
+accept Candy Bucket##29004 |goto Southern Barrens/0 39.29,20.10
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+accept Candy Bucket##12362 |goto Mulgore/0 46.78,60.41
+step
+click Candy Bucket##208144
+|tip Inside the building.
+accept Candy Bucket##12367 |goto Thunder Bluff/0 45.62,64.91
+step
+click Candy Bucket##208144
+|tip Inside the building.
+accept Candy Bucket##28993 |goto Desolace/0 56.72,50.12
+step
+click Candy Bucket##208144
+|tip Inside the building.
+accept Candy Bucket##12381 |goto Desolace/0 24.08,68.29
+step
+click Candy Bucket##208144
+accept Candy Bucket##28996 |goto Feralas/0 41.45,15.68
+step
+click Candy Bucket##208144
+accept Candy Bucket##28998 |goto Feralas/0 51.97,47.64
+step
+click Candy Bucket##208144
+|tip Inside the building.
+accept Candy Bucket##12386 |goto Feralas/0 74.83,45.14
+step
+talk Zidormi##128607
+|tip At the top of the mountain path.
+Select _"Can you show me what Silithus was like before the Wound in the World?"_ |gossip 47634
+Travel to the Past |complete ZGV.InPhase('Old Silithus') |goto Silithus/0 78.93,21.97 |q 12401 |future
+step
+click Candy Bucket##208144
+|tip Inside the building.
+accept Candy Bucket##12401 |goto Silithus/0 55.47,36.79
+step
+click Candy Bucket##208144
+accept Candy Bucket##29018 |goto Un'Goro Crater/0 55.26,62.11
+step
+click Candy Bucket##208144
+accept Candy Bucket##29014 |goto Tanaris/0 55.70,60.96
+step
+click Candy Bucket##208144
+|tip Inside the building.
+accept Candy Bucket##12399 |goto Tanaris/0 52.56,27.10
+step
+click Candy Bucket##208144
+|tip Inside the building, on the ground floor.
 accept Candy Bucket##12397 |goto The Cape of Stranglethorn/0 40.91,73.73
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28969 |goto The Cape of Stranglethorn/0 35.04,27.22
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12382 |goto Northern Stranglethorn/0 37.38,51.78
 step
 talk Zidormi##88206
-Tell her: "_Show me the Blasted Lands before the invasion_"
-Travel to the Past |complete ZGV.InPhase('Old Blasted Lands') |goto Blasted Lands/0 48.16,7.28 < 5 |q 28959 |future
+Select _"Show me the Blasted Lands before the invasion."_ |gossip 42958
+Travel to the Past |complete ZGV.InPhase('Old Blasted Lands') |goto Blasted Lands/0 48.16,7.28 |q 28959 |future
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28959 |goto Blasted Lands/0 40.47,11.29
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12384 |goto Swamp of Sorrows/0 46.87,56.92
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28967 |goto Swamp of Sorrows/0 71.65,14.09
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##28955 |goto Badlands/0 65.86,35.65
+|tip Up on the tower.
+accept Candy Bucket##28965 |goto Searing Gorge/0 39.49,66.04
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28957 |goto Badlands/0 18.36,42.73
 step
 click Candy Bucket##208144
-|tip It's on the top level of the tower.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##28965 |goto Searing Gorge/0 39.49,66.04
+|tip Inside the building.
+accept Candy Bucket##28955 |goto Badlands/0 65.86,35.65
 step
 talk Zidormi##141649
-Select _"Can you show me what Arathi Highlands was like before the war broke out?"_
+Select _"Can you show me what Arathi Highlands was like before war broke out?"_ |gossip 49008
 Travel to the Past |complete ZGV.InPhase('Old Arathi') |goto Arathi Highlands/0 38.24,90.09 |q 12380 |future
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12380 |goto Arathi Highlands/0 69.02,33.27
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12387 |goto The Hinterlands/0 78.19,81.47
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28971 |goto The Hinterlands/0 31.81,57.87
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28987 |goto Western Plaguelands/0 48.28,63.65
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12402 |goto Eastern Plaguelands/20 40.69,90.47
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12373 |goto Ghostlands/0 48.67,31.91
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12365 |goto Eversong Woods/0 43.70,71.03
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12364 |goto Eversong Woods/0 48.19,47.88
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12370 |goto Silvermoon City/0 67.58,72.91
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12369 |goto Silvermoon City/0 79.43,57.66
 step
 talk Zidormi##141488
-Select _"Can you show me what Tirisfal Glades was like before the Battle for Lordaeron?"_
+Select _"Can you show me what Tirisfal Glades was like before the Battle for Lordaeron?"_ |gossip 49018
 Travel to the Past |complete ZGV.InPhase('Old Undercity') |goto Tirisfal Glades/0 69.45,62.80 |q 12368 |future
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##12368 |goto Undercity/0 67.75,37.41
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##12363 |goto Tirisfal Glades/0 60.99,51.41
-step
-click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28972 |goto Tirisfal Glades/0 83.04,72.06
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+accept Candy Bucket##12363 |goto Tirisfal Glades/0 60.99,51.41
+step
+click Candy Bucket##208144
+accept Candy Bucket##12368 |goto Undercity/0 67.75,37.41
+step
+click Candy Bucket##208144
+|tip Inside the building.
 accept Candy Bucket##28966 |goto Silverpine Forest/0 44.30,20.29
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12371 |goto Silverpine Forest/0 46.45,42.90
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12376 |goto Hillsbrad Foothills/0 57.85,47.27
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28962 |goto Hillsbrad Foothills/0 60.26,63.74
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12388 |goto Hellfire Peninsula/0 56.81,37.45
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12389 |goto Hellfire Peninsula/0 26.89,59.47
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12404 |goto Shattrath City/0 56.31,81.95
-only if rep ('The Scryers')>=Neutral
+|only if rep ('The Scryers') >= Neutral
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12404 |goto Shattrath City/0 28.23,49.07
-only if rep ('The Aldor')>=Neutral
+|only if rep ('The Aldor') >= Neutral
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12391 |goto Terokkar Forest/0 48.74,45.17
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12395 |goto Shadowmoon Valley/0 30.27,27.70
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12409 |goto Shadowmoon Valley/0 56.37,59.82
-only if rep ('The Scryers')>=Neutral
+|only if rep ('The Scryers')>=Neutral
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12409 |goto Shadowmoon Valley/0 61.00,28.17
-only if rep ('The Aldor')>=Neutral
+|only if rep ('The Aldor')>=Neutral
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12392 |goto Nagrand/0 56.68,34.48
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12390 |goto Zangarmarsh/0 30.62,50.87
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12403 |goto Zangarmarsh/0 78.45,62.88
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12394 |goto Blade's Edge Mountains/0 76.22,60.39
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12393 |goto Blade's Edge Mountains/0 53.43,55.55
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12406 |goto Blade's Edge Mountains/0 62.90,38.33
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12407 |goto Netherstorm/0 32.02,64.44
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12408 |goto Netherstorm/0 43.31,36.10
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the building, on the bottom floor.
 accept Candy Bucket##13468 |goto Borean Tundra/0 41.71,54.40
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##13460 |goto Borean Tundra/0 78.45,49.16
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##13467 |goto Borean Tundra/0 76.67,37.47
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##13501 |goto Borean Tundra/0 49.74,9.98
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12950 |goto Sholazar Basin/0 26.61,59.20
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##13469 |goto Dragonblight/0 37.83,46.47
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##13459 |goto Dragonblight/0 48.12,74.66
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##13470 |goto Dragonblight/0 76.82,63.28
 step
 click Candy Bucket##208144
-|tip On the top floor inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the building, on the ground floor.
 accept Candy Bucket##13456 |goto Dragonblight/0 60.15,53.45
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the building.
 accept Candy Bucket##13463 |goto Dalaran/1 48.14,41.31
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##13474 |goto Dalaran/1 66.84,29.61
 step
-Enter The Underbelly here |goto Dalaran 34.7,45.5 < 15
-click Candy Bucket##208144
-|tip It's in the side room on the left.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##13472 |goto Dalaran/2 38.20,59.61
-step
-Leave The Underbelly |goto Dalaran/1 34.7,45.5 < 15
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip In the Dalaran Underbelly.
+accept Candy Bucket##13472 |goto Dalaran/2 38.20,59.61
+step
+click Candy Bucket##208144
+|tip Inside the building.
 accept Candy Bucket##13461 |goto The Storm Peaks/0 41.07,85.85
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##13548 |goto The Storm Peaks/0 37.09,49.51
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##13462 |goto The Storm Peaks/0 30.92,37.16
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##13471 |goto The Storm Peaks/0 67.65,50.68
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12940 |goto Zul'Drak/0 59.33,57.20
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12941 |goto Zul'Drak/0 40.87,66.04
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12946 |goto Grizzly Hills/0 20.89,64.77
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##12947 |goto Grizzly Hills/0 65.36,47.00
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##13464 |goto Howling Fjord/0 49.44,10.75
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##13466 |goto Howling Fjord/0 79.26,30.62
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##13465 |goto Howling Fjord/0 52.10,66.15
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the underground building.
 accept Candy Bucket##13452 |goto Howling Fjord/0 25.44,59.82
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the underwater cave.
 accept Candy Bucket##28986 |goto Abyssal Depths/0 51.35,60.55
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the underwater cave.
 accept Candy Bucket##28984 |goto Shimmering Expanse/0 51.48,62.39
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the underwater cave.
 accept Candy Bucket##28982 |goto Shimmering Expanse/0 49.18,41.87
 step
+Enter the underwater cave |goto Kelp'thar Forest/0 61.48,63.54 < 40 |walk |only if not subzone("Deepmist Grotto")
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the underwater cave.
 accept Candy Bucket##28981 |goto Kelp'thar Forest/0 63.50,60.16
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##29019 |goto Deepholm/0 51.19,49.90
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28999 |goto Mount Hyjal/0 63.05,24.14
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##29001 |goto Mount Hyjal/0 42.68,45.71
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##29000 |goto Mount Hyjal/0 18.63,37.32
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28974 |goto Twilight Highlands 45.11,76.81
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28973 |goto Twilight Highlands 53.40,42.85
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##28976 |goto Twilight Highlands 75.40,16.54
 step
 talk Zidormi##162419
-Select _"Can you show me what Uldum was like during the time of the Cataclysm?"_
+Select _"Can you show me what Uldum was like during the time of the Cataclysm?"_ |gossip 51282
 Travel to the Past |complete ZGV.InPhase('OldUldum') |goto Uldum/0 56.02,35.14 |q 29017 |future
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##29017 |goto Uldum/0 54.68,33.01
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##29016 |goto Uldum/0 26.59,7.23
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32050 |goto The Jade Forest/0 28.45,13.27
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32021 |goto The Jade Forest/0 41.68,23.14
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32029 |goto The Jade Forest/0 48.09,34.62
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32027 |goto The Jade Forest/0 45.77,43.61
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32031 |goto The Jade Forest/0 55.72,24.41
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32032 |goto The Jade Forest/0 54.61,63.33
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32028 |goto The Jade Forest/0 28.01,47.39
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##32051 |goto Kun-Lai Summit/0 62.50,28.90
+accept Candy Bucket##32039 |goto Kun-Lai Summit/0 72.73,92.28
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##32037 |goto Kun-Lai Summit/0 57.45,59.95
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##32041 |goto Kun-Lai Summit/0 64.21,61.27
-step
-click Candy Bucket##208144
-|tip You must complete the quest "Challenge Accepted" to access this candy bucket.
-|tip You can complete it by doing the few quests at Binan Village in Kun-Lai Summit.
-|tip These quests will lead you to Eastwind Rest.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip You {o}must complete{} the {o}Challenge Accepted{} quest to access this candy bucket.	|only if not completedq(30515)
+|tip Complete the {o}few quests{} at {o}Binan Village{} nearby.					|only if not completedq(30515)
+|tip The {o}quests will lead you{} to Eastwind Rest.						|only if not completedq(30515)
 accept Candy Bucket##32040 |goto Kun-Lai Summit/0 62.77,80.50
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##32039 |goto Kun-Lai Summit/0 72.73,92.28
+accept Candy Bucket##32037 |goto Kun-Lai Summit/0 57.45,59.95
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+accept Candy Bucket##32041 |goto Kun-Lai Summit/0 64.21,61.27
+step
+click Candy Bucket##208144
+|tip Inside the building.
+accept Candy Bucket##32051 |goto Kun-Lai Summit/0 62.50,28.90
+step
+click Candy Bucket##208144
+|tip Inside the building.
 accept Candy Bucket##32026 |goto The Veiled Stair/0 55.10,72.23
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Upstairs inside the building.
 accept Candy Bucket##32022 |goto Shrine of Two Moons/2 58.84,78.38
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32044 |goto Vale of Eternal Blossoms/0 35.13,77.77
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##32048 |goto Valley of the Four Winds/0 83.64,20.15
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32046 |goto Valley of the Four Winds/0 19.87,55.79
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+accept Candy Bucket##32048 |goto Valley of the Four Winds/0 83.64,20.15
+step
+click Candy Bucket##208144
+|tip Inside the building.
 accept Candy Bucket##32036 |goto Krasarang Wilds/0 75.92,6.87
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32047 |goto Krasarang Wilds/0 61.03,25.14
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32034 |goto Krasarang Wilds/0 51.40,77.29
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32020 |goto Krasarang Wilds/0 28.25,50.74
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32023 |goto Dread Wastes/0 55.22,71.19
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32024 |goto Dread Wastes 55.93,32.27
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##32043 |goto Townlong Steppes/0 71.11,57.78
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##39657 |goto Frostwall/0 47.39,37.39
-step
-Enter the building |goto Dalaran L/10 49.93,37.69 < 10 |walk
-click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##43055 |goto Dalaran L/10 47.96,41.75
 step
-Enter the building |goto Dalaran L/10 63.12,33.13 < 10 |walk
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the building.
 accept Candy Bucket##43057 |goto Dalaran L/10 67.04,29.42
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the building.
 accept Candy Bucket##54709 |goto Dazar'alor/1 49.82,84.73
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the building.
+accept Candy Bucket##75700 |goto Valdrakken/0 72.36,46.67
+step
+click Candy Bucket##208144
+|tip Inside the building.
 accept Candy Bucket##75699 |goto Valdrakken/0 47.12,45.44
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75701 |goto Valdrakken/0 22.37,30.86
 step
-Enter the building |goto Valdrakken/0 77.32,51.23 < 10 |walk
+click Candy Bucket##208144
+accept Candy Bucket##75682 |goto The Waking Shores/0 80.42,27.89
+step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##75700 |goto Valdrakken/0 72.36,46.67
-step
-click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##75673 |goto The Waking Shores/0 47.68,83.30
-step
-click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75683 |goto The Waking Shores/0 76.21,35.41
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the building.
 accept Candy Bucket##75677 |goto The Waking Shores/0 76.07,54.75
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75675 |goto The Waking Shores/0 65.22,57.93
 step
 click Candy Bucket##208144
-|tip Down inside the Ruby Lifeshrine.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##75674 |goto The Waking Shores/0 58.03,67.30
-step
-click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##77698 |goto The Waking Shores/0 43.10,66.66
-step
-click Candy Bucket##208144
-|tip Down inside the hut.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the underground building.
 accept Candy Bucket##75678 |goto The Waking Shores/0 53.91,39.04
 step
 click Candy Bucket##208144
-|tip Down inside the hut.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the underground building.
 accept Candy Bucket##75679 |goto The Waking Shores/0 46.44,27.40
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75676 |goto The Waking Shores/0 25.77,55.18
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75672 |goto The Waking Shores/0 24.46,82.09
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+accept Candy Bucket##77698 |goto The Waking Shores/0 43.10,66.66
+step
+click Candy Bucket##208144
+|tip Inside the building, on the ground floor.
+accept Candy Bucket##75674 |goto The Waking Shores/0 58.03,67.30
+step
+click Candy Bucket##208144
+accept Candy Bucket##75673 |goto The Waking Shores/0 47.68,83.30
+step
+click Candy Bucket##208144
+|tip Inside the building.
 accept Candy Bucket##75693 |goto Ohn'ahran Plains/0 66.24,24.53
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75690 |goto Ohn'ahran Plains/0 85.03,26.03
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75689 |goto Ohn'ahran Plains/0 85.84,35.37
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75688 |goto Ohn'ahran Plains/0 81.29,59.20
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75692 |goto Ohn'ahran Plains/0 72.14,80.38
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75687 |goto Ohn'ahran Plains/0 57.14,76.72
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75685 |goto Ohn'ahran Plains/0 62.94,40.57
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75684 |goto Ohn'ahran Plains/0 46.22,40.60
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75686 |goto Ohn'ahran Plains/0 28.64,60.57
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75691 |goto Ohn'ahran Plains/0 41.91,60.42
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75671 |goto The Azure Span/0 18.82,24.55
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+|tip Inside the underground building.
 accept Candy Bucket##75669 |goto The Azure Span/0 12.39,49.33
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75668 |goto The Azure Span/0 62.78,57.73
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75667 |goto The Azure Span/0 47.04,40.26
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75670 |goto The Azure Span/0 65.50,16.25
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75696 |goto Thaldraszus/0 35.08,79.21
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75695 |goto Thaldraszus/0 59.85,82.69
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75697 |goto Thaldraszus/0 52.40,69.81
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75698 |goto Thaldraszus/0 50.08,42.73
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75702 |goto The Forbidden Reach/5 33.83,58.80
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75704 |goto Zaralek Cavern/0 56.37,56.35
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##75703 |goto Zaralek Cavern/0 52.11,26.47
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84564 |goto Dornogal/0 45.01,47.30
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84566 |goto Isle of Dorn/0 41.99,74.37
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84567 |goto Isle of Dorn/0 58.17,27.12
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##84571 |goto The Ringing Deeps/0 61.87,46.27
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##84568 |goto The Ringing Deeps/0 59.46,64.08
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
-accept Candy Bucket##84570 |goto The Ringing Deeps/0 63.41,78.98
-step
-click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84569 |goto The Ringing Deeps/0 47.89,32.09
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
+accept Candy Bucket##84571 |goto The Ringing Deeps/0 61.87,46.27
+step
+click Candy Bucket##208144
+|tip Inside the building.
+accept Candy Bucket##84568 |goto The Ringing Deeps/0 59.46,64.08
+step
+click Candy Bucket##208144
+|tip Inside the building.
+accept Candy Bucket##84570 |goto The Ringing Deeps/0 63.41,78.98
+step
+click Candy Bucket##208144
+|tip Inside the building.
 accept Candy Bucket##84572 |goto Hallowfall/0 69.06,45.71
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84573 |goto Hallowfall/0 49.13,39.54
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84575 |goto Hallowfall/0 42.76,55.72
 step
 click Candy Bucket##208144
-|tip Under the tent.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84574 |goto Hallowfall/0 40.58,68.00
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84582 |goto Azj-Kahet/0 56.86,38.97
 step
 click Candy Bucket##208144
-|tip Under the tent.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84579 |goto Azj-Kahet/0 58.96,18.62
 step
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84580 |goto Azj-Kahet/0 77.95,62.78
 step
 click Candy Bucket##208144
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84576 |goto Nerub'ar/1 62.05,41.37
 step
-Enter the building |goto Nerub'ar/0 55.23,42.20 < 10 |walk
+Enter the building |goto Nerub'ar/0 55.23,42.20 < 15 |walk
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84577 |goto Nerub'ar/0 57.43,38.49
 step
-Enter the building |goto Nerub'ar/1 51.67,21.92 < 10 |walk
 click Candy Bucket##208144
 |tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84578 |goto Nerub'ar/1 49.75,22.26
 step
 click Candy Bucket##208144
-|tip Inside the building.
-'|use the Handful of Candy##37586
-|tip If you cannot complete this quest because of a "Duplicate item found" message, open the Handful of Treats item in your bags and take out the contents.
 accept Candy Bucket##84581 |goto Azj-Kahet/0 44.85,66.27
+step
+label "Use_Handful_Of_Treats"
+use the Handful of Treats##37586
+|tip You {o}must loot{} your {o}Handful of Treats{} to be able to {o}accept the quest{}.
+|only if itemcount(37586) >= 1
+|sticky only
 ]])
 ZygorGuidesViewer:RegisterGuide("Events Guides\\Harvest Festival\\Harvest Festival Quest",{
 author="support@zygorguides.com",

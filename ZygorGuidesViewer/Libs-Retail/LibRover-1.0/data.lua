@@ -4,7 +4,7 @@ addon.LibRoverData = addon.LibRoverData or {}
 local data=addon.LibRoverData
 
 data.version={
-	nodes_version = 579,  -- Increase this when working on the nodes. Connections will be baked automatically when committing.
+	nodes_version = 582,  -- Increase this when working on the nodes. Connections will be baked automatically when committing.
 }
 
 -- These are kept strictly unique. Make up bogus names if you need to.
@@ -1242,6 +1242,9 @@ data.greenborders = {
 	{"Vale of Eternal Blossoms/0","Shrine of Seven Stars/1"},
 	{"Vale of Eternal Blossoms/0","Shrine of Seven Stars/2"},
 	{"Shrine of Seven Stars/1","Shrine of Seven Stars/2"},
+	{"Vale of Eternal Blossoms/0","Shrine of Two Moons/1"},
+	{"Vale of Eternal Blossoms/0","Shrine of Two Moons/2"},
+	{"Shrine of Two Moons/1","Shrine of Two Moons/2"},
 
 
 
@@ -1586,6 +1589,11 @@ data.ZoneMeta = {
 
 	["Tol Barad/0"] = {flyable=false},
 	["Tol Barad Peninsula/0"] = {flyable=false},
+
+	["Shrine of Seven Stars/1"] = {flyable=true}, 
+	["Shrine of Seven Stars/2"] = {flyable=true}, 
+	["Shrine of Two Moons/1"] = {flyable=true}, 
+	["Shrine of Two Moons/2"] = {flyable=true}, 
 
 	--["The Timeways/0"] = {routable=true},
 

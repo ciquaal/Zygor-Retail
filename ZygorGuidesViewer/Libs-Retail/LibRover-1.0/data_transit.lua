@@ -83,16 +83,16 @@ data.basenodes.transit = --[[LIBROVER]] {
 	-----     TEMPORARY EVENT PORTALS     -----
 	-------------------------------------------
 	
-		-- Caverns of Time -x- Ohn'ahran Plains
-		"Tanaris/0 62.34,49.42 -x- Ohn'ahran Plains/0 36.93,57.47 {fac:B} {mode:PORTAL} {title_btoa:Click the Portal to\nCaverns of Time}"..
+		-- Caverns of Time -x- Val'sharah
+		"Tanaris/0 62.34,49.42 -x- Val'sharah/0 53.90,67.59 {fac:B} {mode:PORTAL} {title_btoa:Click the Portal to\nCaverns of Time}"..
 		"{cond:PlayerCompletedQuest(82672)}",
 	
-		-- Caverns of Time -x- Waking Shores
-		"Tanaris/0 62.40,49.37 -x- The Waking Shores/0 33.25,76.53 {fac:B} {mode:PORTAL} {title_btoa:Click the Portal to\nCaverns of Time}"..
+		-- Caverns of Time -x- Stormheim
+		"Tanaris/0 62.39,49.37 -x- Stormheim/0 37.40,47.46 {fac:B} {mode:PORTAL} {title_btoa:Click the Portal to\nCaverns of Time}"..
 		"{cond:PlayerCompletedQuest(82672)}",
 	
-		-- Caverns of Time -x- Azure Span
-		"Tanaris/0 62.45,49.33 -x- The Azure Span/0 67.07,34.80 {fac:B} {mode:PORTAL} {title_atob:Click the Portal to Caverns of\nTime on Top of the Tower} {title_btoa:Click the Portal to\nCaverns of Time}"..
+		-- Caverns of Time -x- Suramar
+		"Tanaris/0 62.45,49.32 -x- Suramar/0 38.41,42.95 {fac:B} {mode:PORTAL} {title_btoa:Click the Portal to\nCaverns of Time}"..
 		"{cond:PlayerCompletedQuest(82672)}",
 
 	----------------------------------
@@ -127,7 +127,8 @@ data.basenodes.transit = --[[LIBROVER]] {
 	--## Neutral ##--
 
 		-- Dornogal -to- The Timeways
-		"Dornogal/0 53.98,38.72 -x- Millenia's Threshold/0 43.55,49.90 {fac:B} {mode:PORTAL} {title_atob:Click the Portal to The Timeways} {title_btoa:Click the Portal to Dornogal\nnear the big gate}",
+		"Dornogal/0 53.98,38.72 -x- Millenia's Threshold/0 43.55,49.90 {fac:B} {mode:PORTAL} {title_atob:Click the Portal to The Timeways} {title_btoa:Click the Portal to Dornogal\nnear the big gate}"..
+		"{cond:PlayerLevel() >= 80}",
 
 		-- The Timeways -to- Ardenweald
 		"Millenia's Threshold/0 64.51,43.60 -to- Ardenweald/0 43.93,52.06 {mode:PORTAL}",
@@ -903,7 +904,7 @@ data.basenodes.transit = --[[LIBROVER]] {
 			"{cond:PlayerCompletedQuest(54871) and not ZGV.InPhase('Old Darnassus') and ZGV.InPhase('Warfront Darkshore Control')}",
 
 		-- Caverns of Time - Tanaris, Kalimdor -to- Stormwind City - Elwynn Forest, Eastern Kingdoms --CHECKED
-		"Tanaris/17 58.98,26.75 -to- @sw_tp_dst {fac:A} {mode:PORTAL} {title:Click the Portal to Stormwind}",
+		"Tanaris/17 53.50,30.10 -to- @sw_tp_dst {fac:A} {mode:PORTAL} {title:Click the Portal to Stormwind}",
 
 		-- The Exodar - Azuremyst Isle, Kalimdor -to- Rut'theran Village - Darnassus, Kalimdor --CHECKED
 		"Azuremyst Isle/0 20.40,54.17 -to- Teldrassil/0 52.38,89.47 {fac:A} {mode:PORTAL} {title:Click the Portal to Darnassus} "..
@@ -945,8 +946,8 @@ data.basenodes.transit = --[[LIBROVER]] {
 		"Darkshore/0 46.24,35.11 -to- Dazar'alor/0 51.66,93.82 {fac:H} {mode:PORTAL} {title:Click the Portal to Port of Zandalar} "..
 			"{cond:PlayerCompletedQuest(54416) and not ZGV.InPhase('Old Darnassus') and ZGV.InPhase('Warfront Darkshore Control')}",
 
-			-- Caverns of Time - Tanaris, Kalimdor -to- Orgrimmar - Durotar, Kalimdor --CHECKED
-			"Tanaris/17 58.21,26.69 -to- @org_tp_dst {fac:H} {mode:PORTAL} {title:Click the Portal to Orgrimmar}",
+		-- Caverns of Time - Tanaris, Kalimdor -to- Orgrimmar - Durotar, Kalimdor --CHECKED
+		"Tanaris/17 53.29,28.02 -to- @org_tp_dst {fac:H} {mode:PORTAL} {title:Click the Portal to Orgrimmar}",
 
 		-- Magni's Encampment - Silithus, Kalimdor -to- Hall of Ancient Paths - Zuldazar, Zandalar --CHECKED
 		"Silithus/0 41.61,45.20 -to- Dazar'alor/1 68.28,64.58 {fac:H} {mode:PORTAL} {title:Click the Portal to Zuldazar} "..
@@ -1547,7 +1548,7 @@ data.basenodes.transit = --[[LIBROVER]] {
 			"{fac:H} {mode:PORTAL} {cond:PlayerLevel() < 10} {cost:999}",
 
 		-- Honeydew Village - The Jade Forest, Pandaria -to- Orgrimmar - Durotar, Kalimdor --
-		"The Jade Forest/0 28.52,14.02 -to- @org_tp_dst <title:Orgrimmar> {fac:H} {cond:PlayerCompletedQuest(31769)} "..
+		"The Jade Forest/0 28.52,14.02 -to- @org_tp_dst <title:Orgrimmar> {fac:H} "..
 			"{mode:PORTAL}",
 
 		-- Shado-Pan Garrison - Townlong Steppes, Pandaria -to- The Crimson Treader - Isle of Thunder, Pandaria --
@@ -1575,7 +1576,7 @@ data.basenodes.transit = --[[LIBROVER]] {
 				"{cond:PlayerCompletedQuest(32212) and not PlayerCompletedQuest(32212)}",
 
 		-- Shrine of Two Moons - Vale of Eternal Blossoms, Pandaria -to- Orgrimmar - Durotar, Kalimdor --
-		"Shrine of Two Moons/2 73.35,42.69 <region:shrine2moon_east> -to- @org_tp_dst {fac:H} {mode:PORTAL}",
+		"Shrine of Two Moons/2 73.35,42.69 -to- @org_tp_dst {fac:H} {mode:PORTAL}",
 
 		-- Shrine of Two Moons - Vale of Eternal Blossoms, Pandaria -to- Orgrimmar - Durotar, Kalimdor -- Patch 8.3
 		"Vale of Eternal Blossoms New/0 63.72,9.89 -to- @org_tp_dst {fac:H} {mode:PORTAL} {cond:not ZGV.InPhase('OldVale')}",

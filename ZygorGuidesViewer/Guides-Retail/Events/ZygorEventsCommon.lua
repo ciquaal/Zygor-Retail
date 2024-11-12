@@ -2408,10 +2408,10 @@ talk Clarelle##208474
 turnin The Superbloom##78319 |goto The Emerald Dream/0 44.62,71.96
 |next "Accept_The_Superbloom"
 ]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\The War Within (70-80)\\20th Anniversary Event",{
+ZygorGuidesViewer:RegisterGuide("Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\20th Anniversary Event Weeklies",{
 author="support@zygorguides.com",
 description="This guide will help you complete the 20th anniversary event weekly quests.",
-startlevel=30,
+startlevel=10,
 patch='110005',
 },[[
 step
@@ -2475,8 +2475,12 @@ talk Petra##226251
 Talk to Petra |q 84254/5 |goto Tanaris/0 61.99,50.10
 step
 talk Izaik Kadarov##223882
-accept Soldier of Time##57300 |goto Tanaris/0 62.28,51.77
-accept Timely Gate Crashers##60215 |goto Tanaris/0 62.28,51.77
+accept Soldier of Time##57300 |goto Tanaris/0 62.28,51.77 |or 2 |noautoaccept
+|tip This quest is PVP in the Korrak's Revenge event.
+|tip You can skip this if you wish.
+accept Timely Gate Crashers##60215 |goto Tanaris/0 62.28,51.77 |or 2
+accept The Originals##47254 |goto Tanaris/0 62.28,51.77 |or 2
+|tip You will only be able to accept two of these quests.
 |only if not completedq(84489)
 step
 talk Hansel Cyrilson##226212
@@ -2559,21 +2563,44 @@ talk Chromie##226368
 turnin Chromie's Codex##82783 |goto Tanaris/0 62.56,50.03
 step
 talk Izaik Kadarov##223882
-accept Soldier of Time##57300 |goto Tanaris/0 62.28,51.77 |noautoaccept
+accept Soldier of Time##57300 |goto Tanaris/0 62.28,51.77 |or 2 |noautoaccept
 |tip This quest is PVP in the Korrak's Revenge event.
 |tip You can skip this if you wish.
-accept Timely Gate Crashers##60215 |goto Tanaris/0 62.28,51.77
+accept Timely Gate Crashers##60215 |goto Tanaris/0 62.28,51.77 |or 2
+accept The Originals##47254 |goto Tanaris/0 62.28,51.77 |or 2
+|tip You will only be able to accept two of these quests.
 stickystart "Complete_Timewalking_Dungeons"
 step
 kill Doomwalker##167749 |q 60215/1 |goto Tanaris/0 61.92,59.28
 |tip This is a raid boss and will require a group.
+|only if haveq(60215) or completedq(60215)
 step
 kill Sha of Anger##226646 |q 60215/2 |goto Tanaris/0 33.70,55.70
 |tip This is a raid boss and will require a group.
+|only if haveq(60215) or completedq(60215)
 step
 kill Archavon the Stone Watcher##227257 |q 60215/3 |goto Tanaris/0 46.07,29.03
 |tip This is a raid boss and will require a group.
 |tip Kill the Val'kyr Hunters and have players stand in their place to release Archavon.
+|only if haveq(60215) or completedq(60215)
+step
+kill Azuregos##121820 |q 47254/2 |goto Azshara/0 48.77,84.38
+|tip This is a raid boss and will require a group.
+|tip Avoid standing in things on the ground.
+|tip Avoid standing in front or behind Azuregos.
+|tip Run away when you are pulled in.
+|only if haveq(47254) or completedq(47254)
+step
+kill Emeriss##121913 |q 47254/3 |goto Duskwood/0 46.62,40.52
+|tip This is a raid boss and will require a group.
+|tip Move out of things on the ground.
+|tip Avoid standing in front or behind Emeriss.
+|tip Avoid large mushrooms.
+|only if haveq(47254) or completedq(47254)
+step
+kill Lord Kazzak##121818 |q 47254/1 |goto Blasted Lands/0 32.49,49.10
+|tip This is a raid boss and will require a group.
+|only if haveq(47254) or completedq(47254)
 stickystart "Collect_Timewarped_Blueprints"
 step
 Defeat Dagran Thaurissan |q 82817/1
@@ -2613,7 +2640,8 @@ turnin Disturbance Detected: Blackrock Depths##82817 |goto Tanaris/0 62.98,49.65
 step
 talk Izaik Kadarov##223882
 turnin Soldier of Time##57300 |goto Tanaris/0 62.28,51.77 |only if haveq(57300) or completedq(57300)
-turnin Timely Gate Crashers##60215 |goto Tanaris/0 62.28,51.77
+turnin Timely Gate Crashers##60215 |goto Tanaris/0 62.28,51.77 |only if haveq(60215) or completedq(60215)
+turnin The Originals##47254 |goto Tanaris/0 62.28,51.77 |only if haveq(47254) or completedq(47254)
 step
 talk Yllana##223877
 turnin Celebrate Good Fun!##84616 |goto Tanaris/0 62.87,50.66
@@ -2624,56 +2652,693 @@ You have completed the available daily quests
 |tip This guide will reset automatically when more become available.
 '|complete not completedq(84616,43461,43323) |next "Accept_Daily_Quests"
 ]])
-ZygorGuidesViewer:RegisterGuide("Events Guides\\Dragonflight (10-70)\\Hearthstone 10th Anniversary Event",{
+ZygorGuidesViewer:RegisterGuide("Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Guest Relations",{
 author="support@zygorguides.com",
-description="This guide will help you complete the Hearthstone 10th Anniversary event activities.",
-startlevel=1,
-patch='100205',
-achieveid={20033,19724},
-mounts={212522,278966},
-pet=432486,
+description="This guide will help you complete the 20th anniversary Guest Relations secret event.",
+startlevel=10,
+patch='110005',
 },[[
 step
-learnmount Fiery Hearthsteed##278966
-|tip Log in between March 11th and March 18th to receive this mount.
-|tip You must install Hearthstone and log in at least once to unlock this mount.
-|tip You will see a popup for this mount in Hearthstone.
+accept Another Timely Invitation##82672
+|tip You will accept this quest automatically.
+|tip If this doesn't happen, check your mailbox for a quest item.
 step
-collect Hearthstone Invitation Letter##212154 |q 79184 |future
-|tip Collect this from the nearest mailbox.
+talk Yllana##223877
+turnin Another Timely Invitation##82672 |goto Tanaris/0 62.87,50.66
 step
-use the Hearthstone Invitation Letter##212154
-accept It's Hearthstone's Anniversary!##79184
+talk Alyx##226683
+accept Lost and Busy##84143 |goto Tanaris/0 63.02,50.24
 step
-talk MC Farala##215409
-|tip Up on the platform.
-turnin It's Hearthstone's Anniversary!##79184| goto Valdrakken/0 62.75,64.87
-accept Play Hearthstone!##79178| goto Valdrakken/0 62.75,64.87
+talk Maru##226684
+turnin Lost and Busy##84143 |goto Tanaris/0 63.22,52.40
+accept Tat Big Meanie##84144 |goto Tanaris/0 63.22,52.40
 step
-talk Shady Dealer##215385
-|tip Up on the bridge.
-buy 5 Hearthstone Wild Card##211965 |goto Valdrakken/0 60.55,59.28 |q 79178
+click Hear Historic Tales at the Storyteller Stage!
+|tip It appears at the corner of the tent.
+collect Hear Historic Tales at the Storyteller Stage!##227363 |q 84144 |goto Tanaris/0 62.01,51.53
 step
-use the Hearthstone Wild Card##211965
-|tip Use them on cooldown next to the table up on the platform.
-Play #5# Cards |q 79178/1 |goto Valdrakken/0 62.33,67.66
+click Red Hair
+|tip On the ground next to the crates.
+collect Red Hair##227364 |q 84144 |goto Tanaris/0 62.13,51.76
 step
-talk MC Farala##215409
-|tip Up on the platform.
-turnin Play Hearthstone!##79178| goto Valdrakken/0 62.75,64.81
+talk Ratts##226775
+Select _"What did you do with Maru's brother's sleuthing tool?"_ |gossip 123577
+Select _"Of course I have proof. But if you tell me now, I'll reduce your sentence."_ |gossip 123579
+Speak to Ratts |q 84144/2 |goto Tanaris/0 63.99,51.69 |count 75 hidden
 step
-Every Hour a Portal Will Spawn
-|tip The location where the portal spawns follows a cycle.
-|tip The portals spawn in Stormwind, then Durotar, then Valdrakken.
-|tip Ask around to see where the last portal spawned.
-|tip Then head to the next portal location in the cycle.
-|tip The remaining rewards from the event have a random chance to drop from the rares that spawn from the portals.
-|tip Open Hearthstone Starter Packs to collect cards and other rewards.
-|tip You have not collected the Compass Rose mount. |only if not hasmount(212522)
-|tip You have not collected the Sarge pet. |only if not haspet(432486)
-The poral locations are as follows:
-Stormwind [Stormwind City/0 33.99,20.52]
-Durotar [Durotar/0 53.10,16.17]
-Valdrakken [Valdrakken/0 62.24,66.97]
+click Strange Torch
+Find the Strange Torch |q 84144/2 |goto Tanaris/0 63.65,47.92 |count 100 hidden
+step
+talk Maru##226684
+turnin Tat Big Meanie##84144 |goto Tanaris/0 63.22,52.40
+accept To da Ruins!##84419 |goto Tanaris/0 63.22,52.40
+step
+talk Zidormi##162419
+Select _"Can you show me what Uldum was like during the time of the Cataclysm?"_ |gossip 51282
+|tip There is a phasing bug which will prevent some of the following quests from working properly.
+|tip You must time travel to the original version of Uldum to properly phase southern Tanaris.
+Travel Back in Time in Uldum |havebuff Time Travelling##317785 |goto Uldum New/0 56.02,35.14 |q 84393 |future
+step
+talk Maru##229062
+turnin To da Ruins!##84419 |goto Tanaris/0 35.13,78.17
+accept Da Stick of Revealing##84393 |goto Tanaris/0 35.13,78.17
+step
+extraaction Flame Bearer##419127
+Use the Torch of Pyrreth |q 84393/1 |goto Tanaris/0 35.13,78.17
+step
+extraaction Flame Bearer##419127
+Approach the Brazier |q 84393/2 |goto Tanaris/0 37.26,78.99
+step
+Light the Brazier |q 84393/3 |goto Tanaris/0 37.26,78.99
+step
+talk Maru##229062
+|tip He will run to this location.
+turnin Da Stick of Revealing##84393 |goto Tanaris/0 37.16,78.93
+accept Tweasure Hunt##84363 |goto Tanaris/0 37.16,78.93
+step
+use the Torch of Pyrreth##208092
+kill Tanaris Sandworm##228810
+Retrieve the Cool Guts |q 84363/3 |goto Tanaris/0 42.20,71.96 |count 25 hidden
+step
+use the Torch of Pyrreth##208092
+click Jeweled Eye
+|tip It appears in the right eye of the statue.
+Retrieve the Jeweled Eye |q 84363/3 |goto Tanaris/0 40.82,70.51 |count 50 hidden
+step
+use the Torch of Pyrreth##208092
+click Half-Buried Chest
+Retrieve the Golden Chalice |q 84363/3 |goto Tanaris/0 44.99,64.56 |count 75 hidden
+step
+use the Torch of Pyrreth##208092
+kill Ancient Statue##228791
+Retrieve the Fragment of an Ancient Statue |q 84363/3 |goto Tanaris/0 52.29,45.35 |count 100 hidden
+step
+talk Maru##226684
+turnin Tweasure Hunt##84363 |goto Tanaris/0 63.22,52.40
+step
+talk Benatauk##226766
+accept Thoughtful Pursuits##84521 |goto Tanaris/0 63.25,52.38
+step
+Retrieve Benatauk's Crystal Ocular Lenses |q 84521/2 |goto Tanaris/0 64.21,50.07 |count 33 hidden
+|tip Maru will dig them up.
+step
+Retrieve Benatauk's Thought Calculating Apparatus |q 84521/2 |goto Tanaris/0 63.52,48.42 |count 66 hidden
+|tip Maru will find them.
+step
+Retrieve Benatauk's Downy Helmet Liner |q 84521/2 |goto Tanaris/0 61.53,49.89 |count 100 hidden
+|tip Maru will dig it up.
+step
+talk Benatauk##226766
+turnin Thoughtful Pursuits##84521 |goto Tanaris/0 63.25,52.38
+accept A Whiff of Help##84868 |goto Tanaris/0 63.25,52.38
+step
+click Benatauk##226766
+step
+talk Benatauk##226766
+Select _"Let me browse your goods."_ |gossip 124412
+buy Spiritual Incense##229351 |q 84868/1 |goto Tanaris/0 63.25,52.38
+step
+use the Spiritual Incense##229351
+Use the Spiritual Incense |q 84868/2 |goto Tanaris/0 63.25,52.38
+step
+talk Maru##230711
+Select _"So you can give me hints from here?"_ |gossip 124413
+Speak with Maru's Spirit |q 84868/3 |goto Tanaris/0 63.25,52.38
+step
+talk Benatauk##226766
+turnin A Whiff of Help##84868 |goto Tanaris/0 63.25,52.38
+step
+talk Alyx##226683
+accept The Great Detective##84236 |goto Tanaris/0 63.02,50.24
+step
+talk Athelton Jones##226796
+turnin The Great Detective##84236 |goto Tanaris/0 63.94,51.70
+accept The "Great" Detective##84237 |goto Tanaris/0 63.94,51.70
+step
+talk Ellanoir##226805
+Select _"Do you know Herrkrop?"_ |gossip 123607
+Select _"Where did you last see Herrkrop?"_ |gossip 123608
+Question Ellanoir |q 84237/2 |goto Tanaris/0 63.81,51.02 |count 12 hidden
+step
+talk Duryllin##226804
+Select _"What were you doing on the Broken Isles?"_ |gossip 123615
+Question Duryllin |q 84237/2 |goto Tanaris/0 63.82,51.08 |count 24 hidden
+step
+talk Juddson Rakes##226803
+Select _"Surely a demon hunter of your skill has a moment to talk."_ |gossip 123611
+Select _"Where did you last see Herrkrop?"_ |gossip 123610
+Question Juddson |q 84237/2 |goto Tanaris/0 63.79,51.05 |count 36 hidden
+step
+talk Ellanoir##226805
+Select _"What business was Herrkrop doing?"_ |gossip 123609
+Question Ellanoir Again |q 84237/2 |goto Tanaris/0 63.81,51.02 |count 48 hidden
+step
+use the Torch of Pyrreth##208092
+|tip You must have this active.
+talk Scrapes##226812
+Investigate the Corpse |q 84237/2 |goto Tanaris/0 66.23,40.64 |count 60 hidden
+step
+talk Scrapes##226812
+Select _"Did you witness anything suspicious recently?"_ |gossip 123675
+Question Scrapes |q 84237/2 |goto Tanaris/0 66.21,40.69 |count 72 hidden
+step
+talk Nat Pagle##228477
+Select _"Did you witness anything suspicious recently?"_ |gossip 123668
+Question Nat Pagle |q 84237/2 |goto Tanaris/0 65.89,40.39 |count 84 hidden
+step
+talk Julia Henning##226814
+|tip She walks around this area.
+Select _"Did you witness anything suspicious recently?"_ |gossip 123672
+Question Julia |q 84237/2 |goto Tanaris/0 65.79,41.09 |count 96 hidden
+step
+talk Athelton Jones##226796
+Select _"I think I know who did it."_ |gossip 123678
+Select _"It was Scrapes."_ |gossip 123684
+Accuse Someone of Murder |q 84237/2 |goto Tanaris/0 66.32,40.65
+step
+talk Alyx##226683
+turnin The "Great" Detective##84237 |goto Tanaris/0 63.02,50.24
+step
+talk Alyx##226683
+accept Tracking Quest##84278 |goto Tanaris/0 63.02,50.24
+step
+click Pre-Calibrated Goblin Transport Vessel
+Travel to Northrend |complete zone("Northrend") |goto Tanaris/0 68.04,40.83 |q 84278
+step
+Find Rexxar in the Borean Tundra |q 84278/2 |goto Borean Tundra/0 77.30,46.16
+step
+talk Rexxar##226952
+turnin Tracking Quest##84278 |goto Borean Tundra/0 77.30,46.16
+accept The Trail's Gone Cold##84296 |goto Borean Tundra/0 77.30,46.16
+step
+use the Torch of Pyrreth##208092
+|tip You must have this active.
+click Torn Note
+|tip Inside the hut.
+Retrieve the Torn Diary, Page 4 |q 84296/2 |goto Borean Tundra/0 85.92,33.96 |count 20 hidden
+step
+click Mounted Spyglass
+|tip On top of The Glimmering Pillar.
+Investigate the Spyglass |q 84296/2 |goto Sholazar Basin/0 49.71,35.98 |count 40 hidden
+step
+use the Spirit's Whistle##227664
+|tip You must have Rexxar near you to see Scrapes.
+talk Scrapes##228634
+|tip Inside the upper part of Balargarde Fortress.
+Investigate Scraps |q 84296/2 |goto Icecrown/0 16.02,58.84 |count 80 hidden
+step
+use the Spirit's Whistle##227664
+|tip You must have Rexxar near you to see Scrapes.
+talk Rexxar##228550
+|tip He will appear and walk up to you.
+Select _"I think I know what happened."_ |gossip 123717
+Select _"Scrapes was killed by a shapeshifter."_ |gossip 123714
+Solve the Mystery |q 84296/2 |goto Icecrown/0 16.22,58.73
+step
+talk Alyx##226683
+turnin The Trail's Gone Cold##84296 |goto Tanaris/0 63.02,50.24
+step
+talk Alyx##226683
+accept Warn the Detective##84334 |goto Tanaris/0 63.02,50.24
+step
+talk Athelton Jones##228661
+turnin Warn the Detective##84334 |goto Tanaris/0 60.92,50.66
+accept Spot the Difference##84336 |goto Tanaris/0 60.92,50.66
+step
+talk Athelton Jones##228661
+Select _"You're the shapeshifter!"_ |gossip 123741
+Identify the Shapeshifter |q 84336/3 |goto Tanaris/0 60.92,50.66
+step
+kill Y'lliya Xennin##228663 |q 84336/4 |goto Tanaris/0 60.00,62.53
+step
+talk Alyx##226683
+turnin Spot the Difference##84336 |goto Tanaris/0 63.02,50.24
+step
+talk Alyx##232404
+accept Torn Dreams##83832 |goto Tanaris/0 63.02,50.24
+step
+talk Raenie Fizzlebog##231433
+turnin Torn Dreams##83832 |goto Tanaris/0 63.06,52.01
+accept Restoring A Grand Tale##83825 |goto Tanaris/0 63.06,52.01
+step
+talk Cravitz Lorent##227816
+|tip Under the back of the dance floor.
+buy Green Hills of Stranglethorn##226242 |q 83825/2 |goto Tanaris/0 63.61,48.77
+|tip This costs 100 gold.
+step
+talk Raenie Fizzlebog##231433
+turnin Restoring A Grand Tale##83825 |goto Tanaris/0 63.06,52.01
+step
+talk Alyx##232404
+accept Toy Trouble##84563 |goto Tanaris/0 63.02,50.24 |only if Alliance
+accept Toy Trouble##85024 |goto Tanaris/0 63.02,50.24 |only if Horde
+step
+talk Maru##226684
+turnin Toy Trouble##84563 |goto Tanaris/0 63.22,52.40 |only if Alliance
+turnin Toy Trouble##85024 |goto Tanaris/0 63.22,52.40 |only if Horde
+accept Operation Toy Rescue##84588 |goto Tanaris/0 63.22,52.40 |only if Alliance
+accept Operation Toy Rescue##85025 |goto Tanaris/0 63.22,52.40 |only if Horde
+step
+click Mound of Dirt
+Find Yennu's Toy Ball |q 84588/2 |goto Ohn'ahran Plains/0 61.96,37.50 |count 25 hidden |only if Alliance
+Find Yennu's Toy Ball |q 85025/2 |goto Ohn'ahran Plains/0 61.96,37.50 |count 25 hidden |only if Horde
+step
+talk Yennu##229847
+Select _"I found your ball."_ |gossip 124577
+Return Yennu's Toy |q 84588/2 |goto The Azure Span/0 13.43,48.92 |count 50 hidden |only if Alliance
+Return Yennu's Toy |q 85025/2 |goto The Azure Span/0 13.43,48.92 |count 50 hidden |only if Horde
+step
+click Ball of Yarn
+Find Kenshi's Ball of Yarn |q 84588/2 |goto Boralus/0 42.09,75.09 |count 75 hidden
+|only if Alliance
+step
+talk Kenshi##142044
+Select _"<Give the ball of yarn to Kenshi.>"_ |gossip 124358
+|tip It walks around inside the building.
+Return Kenshi's Ball of Yarn |q 84588/2 |goto Boralus/0 53.91,72.94 |count 100 hidden
+|only if Alliance
+step
+click Plush Toy
+|tip Up in the tree branch.
+Find Nuts' Plush Toy |q 85025/2 |goto Dazar'alor/0 56.42,21.22 |count 75 hidden
+|only if Horde
+step
+talk Nuts##54227
+|tip Inside the building.
+Select _"<Give the plush toy to Nuts.>"_ |gossip 124582
+Return Nuts' Plush Toy |q 85025/2 |goto Dazar'alor/0 56.23,31.68 |count 100 hidden
+|only if Horde
+step
+talk Maru##226684
+turnin Operation Toy Rescue##84588 |goto Tanaris/0 63.22,52.40 |only if Alliance
+turnin Operation Toy Rescue##85025 |goto Tanaris/0 63.22,52.40 |only if Horde
+step
+talk Alyx##232405
+accept The Final Toy##84755 |goto Tanaris/0 63.02,50.24 |only if Alliance
+accept The Final Toy##85042 |goto Tanaris/0 63.02,50.24 |only if Horde
+step
+talk Maru##226684
+turnin The Final Toy##84755 |goto Tanaris/0 63.22,52.41 |only if Alliance
+turnin The Final Toy##85042 |goto Tanaris/0 63.22,52.41 |only if Horde
+accept The Toy Thief##84756 |goto Tanaris/0 63.22,52.41 |only if Alliance
+accept The Toy Thief##85043 |goto Tanaris/0 63.22,52.41 |only if Horde
+step
+talk Maru##226684
+Select _"I think the culprit is a dog."_ |gossip 124362 |only if Alliance
+Select _"I think the culprit is a dog."_ |gossip 124589 |only if Horde
+Talk to Maru |q 84756/2 |goto Tanaris/0 63.22,52.41 |count 25 hidden |only if Alliance
+Talk to Maru |q 85043/2 |goto Tanaris/0 63.22,52.41 |count 25 hidden |only if Horde
+step
+click Chew Toy
+|tip High up in Ohn'ahra's Roost.
+Retrieve the Chew Toy |q 84756/2 |goto Ohn'ahran Plains/0 57.85,31.66 |count 50 hidden |only if Alliance
+Retrieve the Chew Toy |q 85043/2 |goto Ohn'ahran Plains/0 57.85,31.66 |count 50 hidden |only if Horde
+step
+click Toy Box
+Retrieve the Toy Box |q 84756/2 |goto Ohn'ahran Plains/0 39.61,58.31 |count 75 hidden |only if Alliance
+Retrieve the Toy Box |q 85043/2 |goto Ohn'ahran Plains/0 39.61,58.31 |count 75 hidden |only if Horde
+step
+Enter the cave |goto Ohn'ahran Plains/0 38.42,55.34 < 5 |walk
+click Maru's Toy
+|tip Inside the cave next to the huge toy pile.
+Retrieve the Maru's Toy |q 84756/2 |goto Ohn'ahran Plains/0 38.78,55.98 |count 100 hidden |only if Alliance
+Retrieve the Maru's Toy |q 85043/2 |goto Ohn'ahran Plains/0 38.78,55.98 |count 100 hidden |only if Horde
+step
+talk Maru##226684
+turnin The Toy Thief##84756 |goto Tanaris/0 63.22,52.41 |only if Alliance
+turnin The Toy Thief##85043 |goto Tanaris/0 63.22,52.41 |only if Horde
+step
+talk Alyx##232405
+accept A Hozen On My Back##84583 |goto Tanaris/0 63.02,50.24
+step
+talk Riko##229749
+turnin A Hozen On My Back##84583 |goto Tanaris/0 61.89,50.48
+accept The Case of the Fur-Getting Wikket##84595 |goto Tanaris/0 61.89,50.48
+step
+talk Riko##229749
+Select _"What kind of pet do you want?"_ |gossip 124050
+Speak to Riko |q 84595/1 |goto Tanaris/0 61.89,50.47 |count 20 hidden
+step
+talk Shademaster Kiryn##229774
+Select _"What kind of pet do you want?"_ |gossip 124051
+Speak to Shademaster Kiryn |q 84595/1 |goto Tanaris/0 61.86,50.41 |count 40 hidden
+step
+talk Sully "The Pickle" McLeary##229775
+Select _"I'm looking for a pet."_ |gossip 124068
+Select _"Where are they now?"_ |gossip 124067
+Speak to Sully |q 84595/1 |goto Tanaris/0 63.05,49.42 |count 60 hidden
+step
+use the Torch of Pyrreth##208092
+|tip Wait for it to reveal Gizmo.
+|tip Gizmo will begin running away, so click him fast to save yourself some trouble.
+Reveal Gizmo |q 84595/1 |goto The Jade Forest/0 43.35,68.85 |count 80 hidden
+step
+clicknpc Gizmo##229776
+|tip You need to click it when it stops with enough time to finish the cast.
+Solve the Mystery |q 84595/1 |goto The Jade Forest/0 43.60,68.16
+step
+talk Riko##229749
+turnin The Case of the Fur-Getting Wikket##84595 |goto Tanaris/0 61.89,50.48
+step
+click Darkmoon Fortune Card
+collect Six of Frost##229219 |goto Tanaris/0 63.00,50.21 |q 84882 |future
+step
+talk Alphonse Constant##230838
+Select _"No problem. What business will you eventually be doing here?"_ |gossip 124449
+Select _"Fortune telling, you say? You wouldn't happen to be using a Darkmoon Fortune Deck for that, would you?"_ |gossip 124452
+Select _"You know what? I actually found a card earlier! Is this one of the ones you're missing?"_ |gossip 124455
+Select _"Not a bother at all! I'm happy to help."_ |gossip 124454
+accept Deck Dismay##84882 |goto Tanaris/0 63.87,52.38
+step
+click Darkmoon Fortune Card
+|tip Underneath the tent flap at the corner.
+Retrieve the Six of Fire |q 84882/1 |goto Tanaris/0 63.27,52.26 |count 20 hidden
+step
+click Darkmoon Fortune Card
+|tip Behind the ice cream machine.
+Retrieve the Eight of Fire |q 84882/1 |goto Tanaris/0 61.90,51.61 |count 30 hidden
+step
+click Darkmoon Fortune Card
+Retrieve the Four of Earth |q 84882/1 |goto Tanaris/0 61.20,50.88 |count 40 hidden
+step
+click Darkmoon Fortune Card
+|tip At the corner of the small building.
+Retrieve the Three of Fire |q 84882/1 |goto Tanaris/0 62.15,49.33 |count 50 hidden
+step
+click Darkmoon Fortune Card
+|tip On the dance stage.
+Retrieve the Two of Air |q 84882/1 |goto Tanaris/0 63.18,49.35 |count 60 hidden
+step
+click Darkmoon Fortune Card
+|tip Under the dance stage.
+Retrieve the Seven of Fire |q 84882/1 |goto Tanaris/0 63.41,48.98 |count 70 hidden
+step
+click Darkmoon Fortune Card
+|tip On the steps.
+Retrieve the Three of Frost |q 84882/1 |goto Tanaris/0 63.58,50.99 |count 80 hidden
+step
+click Darkmoon Fortune Card
+|tip Underneath the bench.
+Retrieve the Two of Fire |q 84882/1 |goto Tanaris/0 63.97,51.52 |count 90 hidden
+step
+click Darkmoon Fortune Card
+|tip Between the barrels.
+Retrieve the Five of Fire |q 84882/1 |goto Tanaris/0 63.77,51.91 |count 100 hidden
+step
+talk Alphonse Constant##230838
+turnin Deck Dismay##84882 |goto Tanaris/0 63.87,52.38
+step
+talk Nikto##143029
+|tip Underwater
+buy 1 Clam Digger##225996 |goto Zuldazar/0 54.28,54.50 |q 83790 |future
+step
+click Gerald
+|tip On the rock cliff under the water.
+Select _"<Hold out the clam digger carefully so the contents don't float away.>"_ |gossip 123382
+Unlock the Zuldazar Dive Bar Secret |q 83790 |goto Zuldazar/0 54.24,54.23 |future
+step
+Kill Yourself |complete isdead() or completedq(85574) |goto Desolace/0 54.12,58.05
+|tip You need to be dead to see this treasure.
+|tip You can fly up in the air and dismount at this location to die, then run back.
+step
+click Hazy Celebration Crate
+accept Hazy Celebration Crate##85574 |goto Desolace/0 54.12,58.05 |zombiewalk
+step
+Resurrect |complete not isdead
+|tip Regain your corpse.
+step
+Enter the underwater cave |goto Thousand Needles/0 66.08,86.21 < 15 |walk
+click Water-Resistant Receipt of Sale
+|tip Inside the underwater cave.
+collect Water-Resistant Receipt##228768 |goto Thousand Needles/0 64.92,84.40
+step
+talk Vashti the Wandering Merchant##91079
+|tip He patrols up and down the road between the border of Suramar and The Ruined Sanctum.
+buy Sandy Celebration Crate##228767 |goto Azsuna/0 65.66,36.36 |q 84624 |future
+|tip This will cost 500 gold.
+step
+Enter the Crypt |goto Deadwind Pass/0 39.84,73.38 < 10 |walk
+Go down the tunnel |goto Deadwind Pass/0 33.52,70.72 < 10 |c |walk |q 84470 |future
+step
+Run down the ramp |goto Deadwind Pass/0 36.30,73.79 < 15 |walk
+Swim through |goto Deadwind Pass/0 29.55,81.32
+click Dirt-Caked Celebration Crate
+|tip Down inside the crypt.
+accept Dirt-Caked Celebration Crate##84470 |goto Deadwind Pass/0 22.44,83.74
+step
+click Battered Celebration Crate
+accept Battered Celebration Crate##83931 |goto Howling Fjord/0 29.40,6.36
+step
+click Waterlogged Celebration Crate
+|tip At the bottom of the water inside the upper floor of the building.
+|tip Swim inside and up the elevator.
+accept Waterlogged Celebration Crate##84426 |goto Tanaris/0 69.18,68.60
+step
+talk Alyx##226683
+turnin Hazy Celebration Crate##85574 |goto Tanaris/0 63.02,50.24 |only if haveq(85574)
+turnin Dirt-Caked Celebration Crate##84470 |goto Tanaris/0 63.02,50.24 |only if haveq(84470)
+turnin Sandy Celebration Crate##84624 |goto Tanaris/0 63.02,50.24 |only if haveq(84624)
+turnin Battered Celebration Crate##83931 |goto Tanaris/0 63.02,50.24 |only if haveq(83931)
+turnin Waterlogged Celebration Crate##84426 |goto Tanaris/0 63.02,50.24 |only if haveq(84426)
+|only if haveq(85574,84470,84624,83931,84426)
+step
+Chapter 3 should begin by November 12
+|tip Reload this guide each time an update is released for it to check for new content.
 '|complete false
 ]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\A Cool Twenty Years",{
+author="support@zygorguides.com",
+startlevel=10,
+patch='110005',
+achieveid={40976},
+},[[
+leechsteps "Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\Codex Editor: Ahn'Qiraj"
+leechsteps "Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\A Gatecrasher"
+leechsteps "Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\An Original"
+leechsteps "Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\Peanut Gallery"
+leechsteps "Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\Balloonist"
+leechsteps "Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\Pet Mischief"
+leechsteps "Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\Fashion Critic"
+leechsteps "Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\I Have That One!"
+step
+Earn the {o}A Cool Twenty Years{} Achievement |achieve 40976
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\I Have That One!",{
+author="support@zygorguides.com",
+startlevel=10,
+patch='110005',
+achieveid={40985},
+},[[
+step
+clicknpc Abigail Cyrildotr##224220
+|script local i,j,m,s j=C_MountJournal for i=1,40 do s=select(10,AuraUtil.UnpackAuraData(C_UnitAuras.GetBuffDataByIndex("target",i)))if s then m=j.GetMountFromSpell(s)if m then j.SummonByID(m)break end end end
+Match 1 Mount During the Mount Mania Event |achieve 40985 |goto Tanaris/0 63.02,51.59
+|tip The event starts 15 minutes before the top of every hour.
+|tip Keep the NPC on the stage targeted and use the button on this step each time they summon a new mount.
+|tip If you have that mount, you will automatically match it.
+|tip Otherwise, keep targeting mounts on the stage and using the button until you have a mount that matches.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\Fashion Critic",{
+author="support@zygorguides.com",
+startlevel=10,
+patch='110005',
+achieveid={40987},
+},[[
+step
+Cast 1 Vote at the Fashion Frenzy |achieve 40987 |goto Tanaris/0 63.72,48.99
+|tip Wait for the Fasion Frenzy event to begin at 10 minutes after each hour.
+|tip At 15 minutes past the hour, choose your transmog according to the theme you're given.
+|tip After 2 minutes, run to this table to pick up a ribbon. Vote for anyone nearby.
+|tip At 20 minutes past the hour, the event ends.
+|tip At least one other player needs to be at the event to complete this.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\Pet Mischief",{
+author="support@zygorguides.com",
+startlevel=10,
+patch='110005',
+achieveid={40989},
+},[[
+step
+click Pet Box
+collect Pet Mirror##224157 |goto Tanaris/0 62.03,50.09 |or
+'|achieve 40989 |or
+step
+use the Pet Mirror##224157
+|tip Summon any battle pet and use the Pet Mirror on it.
+Use a Pet Disguiser and Explore the Area |achieve 40989
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\Balloonist",{
+author="support@zygorguides.com",
+startlevel=10,
+patch='110005',
+achieveid={40990},
+},[[
+step
+Click a balloon
+|tip The Balloonist sends out ballons randomly in random directions.
+|tip Click one to ride it.
+Ride One of the Celebration Balloons |complete invehicle() or achieved(40990) |goto Tanaris/0 64.21,50.08
+step
+Ride One of the Celebration Balloons |achieve 40990
+|tip Ride the balloon until you gain the achievement.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\Peanut Gallery",{
+author="support@zygorguides.com",
+startlevel=10,
+patch='110005',
+achieveid={40992},
+},[[
+step
+React to Lorewalker Cho's Stories #50# Times |achieve 40992 |goto Tanaris/0 63.98,51.71
+|tip Wait for Story Time to begin and stand or sit at the story area.
+|tip Each time an ability appears on the screen, use it quickly and as often as possible.
+|tip You will need to attend multiple Story Time events to earn this achivement.
+|tip Story Time events occur between the other events.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\An Original",{
+author="support@zygorguides.com",
+startlevel=10,
+patch='110005',
+achieveid={40994},
+},[[
+step
+kill Taerar##121911 |goto Ashenvale/0 93.79,41.18
+kill Ysondre##121912 |goto Feralas/0 50.95,11.87
+kill Emeriss##121913 |goto Duskwood/0 46.62,40.52
+kill Lethon##121821 |goto The Hinterlands/0 62.83,25.04
+|tip The four dragons of nightmare rotate each week in availability.
+kill Azuregos##121820 |goto Azshara/0 48.77,84.38
+kill Lord Kazzak##121818 |goto Blasted Lands/0 32.49,49.10
+Defeat an Eastern Kingdoms or Kalimdor World Boss |achieve 40994
+|tip Open your world map and pick a world boss to kill.
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\A Gatecrasher",{
+author="support@zygorguides.com",
+startlevel=10,
+patch='110005',
+achieveid={40996},
+},[[
+step
+kill Doomwalker##167749 |goto Tanaris/0 61.92,59.28
+kill Sha of Anger##226646 |goto Tanaris/0 33.70,55.70
+kill Archavon the Stone Watcher##227257 |goto Tanaris/0 46.07,29.03
+Defeat a World Boss in Tanaris |achieve 40996
+]])
+ZygorGuidesViewer:RegisterGuide("Events Guides\\The War Within (70-80)\\20th Anniversary Celebration\\Achievements\\Codex Editor: Ahn'Qiraj",{
+author="support@zygorguides.com",
+startlevel=10,
+patch='110005',
+achieveid={40977},
+},[[
+step
+talk Chromie##226368
+Select _"Count me in! <Queue for The Codex of Chromie.>"_ |gossip 122968 |noautogossip
+|tip This will queue you for the scenario and start forming a group.
+|tip It may take some time, especially if you are DPS.
+Complete the {o}Codex of Chromie{} Scenario |achieve 40977 |goto Tanaris/0 62.56,50.03
+|tip The scenario is fairly simple.
+|tip Stick with Chromie, marked with a rex X on the map when she travels.
+|tip Kill enemies around the objective areas that she stops at with your group.
+|tip This scenario moves very quickly and is easy to complete.
+|tip Kill the final boss and use the portal to leave.
+]])
+ZGV.BETASTART()
+ZygorGuidesViewer:RegisterGuide("Achievement Guides\\Exploration\\The War Within Pathfinder",{
+author="support@zygorguides.com",
+description="This guide will help you complete The War Within Pathfinder achievement.",
+startlevel=70,
+patch='100005',
+achieveid={40831,40826,40825,40822,40790,40231},
+},[[
+step
+Dornogal |achieve 40831/5 |goto Dornogal/0 49.96,57.32 |notravel
+step
+Tranquil Strand |achieve 40831/4 |goto Isle of Dorn/0 30.59,55.45 |notravel
+step
+The Orecrag |achieve 40831/6 |goto Isle of Dorn/0 35.7,75.5 |notravel
+step
+Wanderer's Landing |achieve 40831/7 |goto Isle of Dorn/0 54.57,78.56 |notravel
+step
+Boskroot Basin |achieve 40831/8 |goto Isle of Dorn/0 54,64 |notravel
+step
+Boulder Springs |achieve 40831/2 |goto Isle of Dorn/0 58.33,61.46 |notravel
+step
+Ironwold |achieve 40831/3 |goto Isle of Dorn/0 68.59,48.74 |notravel
+step
+Mourning Rise |achieve 40831/9 |goto Isle of Dorn/0 64.34,44.07 |notravel
+step
+Thunderhead Peak |achieve 40831/1 |goto Isle of Dorn/0 47.9,27.45 |notravel
+step
+The Three Shields |achieve 40831/10 |goto Isle of Dorn/0 71,21.34 |notravel
+step
+The Waterworks |achieve 40825/5 |goto The Ringing Deeps/0 45.93,43.89
+step
+The Living Grotto |achieve 40825/7 |goto The Ringing Deeps/0 55.68,67.17 |notravel
+step
+Opportunity Point |achieve 40825/8 |goto The Ringing Deeps/0 64.72,78.21 |notravel
+step
+Taelloch |achieve 40825/6 |goto The Ringing Deeps/0 62.31,60.25 |notravel
+step
+The Rumbling Wastes |achieve 40825/4 |goto The Ringing Deeps/0 64,51.8 |notravel
+step
+Shadowvein Extraction Site |achieve 40825/3 |goto The Ringing Deeps/0 61.68,41.82 |notravel
+step
+Lost Mines |achieve 40825/2 |goto The Ringing Deeps/0 59.37,24.56 |notravel
+step
+Gundargaz |achieve 40825/10 |goto The Ringing Deeps/0 47.1,33.46 |notravel
+step
+The Earthenworks |achieve 40825/1 |goto The Ringing Deeps/0 47.15,18.3 |notravel
+step
+The Hallowfall Gate |achieve 40825/9 |goto The Ringing Deeps/0 40.88,23.8 |notravel
+step
+The Aegis Wall |achieve 40826/2 |goto Hallowfall/0 70.72,58.71
+step
+Dunelle's Kindness |achieve 40826/1 |goto Hallowfall/0 68.52,44.71 |notravel
+step
+The Fangs |achieve 40826/3 |goto Hallowfall/0 57,48.54 |notravel
+step
+Light's Blooming |achieve 40826/7 |goto Hallowfall/0 63,28 |notravel
+step
+Lorel's Crossing |achieve 40826/4 |goto Hallowfall/0 48.51,40.45 |notravel
+step
+Priory of the Sacred Flame |achieve 40826/8 |goto Hallowfall/0 36.36,35.41 |notravel
+step
+The Undersea |achieve 40826/9 |goto Hallowfall/0 30,42 |notravel
+step
+Mereldar |achieve 40826/5 |goto Hallowfall/0 41.5,52.49 |notravel
+step
+Light's Redoubt |achieve 40826/6 |goto Hallowfall/0 40.46,71.2 |notravel
+step
+Ruptured Lake |achieve 40822/1 |goto Azj-Kahet/0 29.46,45.12
+step
+Lightless Channels |achieve 40822/2 |goto Azj-Kahet/0 46.59,36.14 |notravel
+step
+The Weaver's Lair |achieve 40822/4 |goto Azj-Kahet/0 56,44 |notravel
+step
+Crawling Chasm |achieve 40822/3 |goto Azj-Kahet/0 61.83,23.51 |notravel
+step
+Untamed Valley |achieve 40822/5 |goto Azj-Kahet/0 65,52 |notravel
+step
+Rak-Ush |achieve 40822/7 |goto Azj-Kahet/0 74.81,80.27 |notravel
+step
+High Hollows |achieve 40822/10 |goto Nerub'ar/1 72,48 |notravel
+step
+Umbral Bazaar |achieve 40822/9 |goto Nerub'ar/1 60.92,19.34 |notravel
+step
+The Skeins |achieve 40822/8 |goto Nerub'ar/1 31,24 |notravel
+step
+Twitching Gorge |achieve 40822/6 |goto Azj-Kahet/0 49.74,61.4 |notravel
+step
+Complete The Isle of Dorn Story Campaign |achieve 20118
+|loadguide "Leveling Guides\\The War Within (70-80)\\Story Campaigns\\Intro & Isle of Dorn (Story Only)"
+step
+Complete The Ringing Deeps Story Campaign |achieve 19560
+|loadguide "Leveling Guides\\The War Within (70-80)\\Story Campaigns\\The Ringing Deeps (Story Only)"
+step
+Complete the Hallowfall Story Campaign |achieve 20598
+|loadguide "Leveling Guides\\The War Within (70-80)\\Story Campaigns\\Hallowfall (Story Only)"
+step
+Complete Azj-Kahet Story Campaign |achieve 19559
+|loadguide "Leveling Guides\\The War Within (70-80)\\Story Campaigns\\Azj-Kahet (Story Only)"
+]])
+ZGV.BETAEND()

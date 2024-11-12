@@ -306,80 +306,111 @@ Click Here to Continue with this Guide |confirm |next
 '|complete achieved(20597)
 step
 clicknpc Evan##227336 |goto Hallowfall/0 42.69,53.84
+'|script DoEmote("PET")
 |tip Inside the building.
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/2 |or
 step
 clicknpc Emery##227335 |goto Hallowfall/0 42.73,53.84
+'|script DoEmote("PET")
 |tip Inside the building.
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/3 |or
 step
 clicknpc Jinx##227411 |goto Hallowfall/0 42.30,53.81
+'|script DoEmote("PET")
 |tip He walks around inside the building.
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/4 |or
 step
 clicknpc Gobbo##227442 |goto Hallowfall/0 42.14,53.71
+'|script DoEmote("PET")
 |tip On the bed, inside the house.
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/14 |or
 step
 clicknpc Moog##225421 |goto Hallowfall/0 69.27,43.72
+'|script DoEmote("PET")
 |tip Inside the building.
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/5 |or
 step
 clicknpc Iggy##225420 |goto Hallowfall/0 69.29,43.68
+'|script DoEmote("PET")
 |tip Inside the building.
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/6 |or
 step
 clicknpc Fuzzy##219412 |goto Hallowfall/0 64.44,18.57
+'|script DoEmote("PET")
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/11 |or
 step
 clicknpc Furball##218887 |goto Hallowfall/0 64.44,18.57
+'|script DoEmote("PET")
 |tip Near Fuzzy.
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/12 |or
 step
 clicknpc Dander##221106 |goto Hallowfall/0 61.91,20.80
+'|script DoEmote("PET")
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/13 |or
 step
-click Lesser Keyflame##00000 |goto Hallowfall/0 63.30,29.40
+Kill enemies around this area
+collect 3 Radiant Remnants##206350 |n
+|tip Toss them into the small brazier.
+click Lesser Keyflame##421006 |goto Hallowfall/0 63.30,29.40
 |tip If it's already lit, you should find Nightclaw nearby.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/7 |or
 step
 clicknpc Nightclaw##216549 |goto Hallowfall/0 42.14,53.71
-|tip Use the /pet emote.
-|tip The Lesser Keyflame must be lit for this lynx to appear.
+'|script DoEmote("PET")
+|tip You must light the Lesser Keyflame for this lynx to appear.
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/7 |or
 step
 click Light's Blooming Keyflame##415734 |goto Hallowfall/0 63.50,28.50
-|tip If it's already lit, you should find Puurlock and Shadowpouncer nearby.
+|tip To activate the keyflame, add up to 20 Radiant Remnants to start the timer.
+|tip Once it's lit, you should find Puurlock and Shadowpouncer nearby.
+|tip If you don't see them here after starting the timer, kill mobs within range of Light's Blooming Keyflame.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/9 |or
 step
 clicknpc Puurlock##215606 |goto Hallowfall/0 63.79,29.32
+'|script DoEmote("PET")
 |tip Next to a wagon when the rare isn't at this location.
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/9 |or
 step
 clicknpc Shadowpouncer##215590 |goto Hallowfall/0 63.27,28.07
+'|script DoEmote("PET")
 |tip In front of a tower, next to a lady NPC, when the rare isn't at this location.
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/8 |or
 step
 clicknpc Miral Murder-Mittens##215041 |goto Hallowfall/0 61.20,30.51
+'|script DoEmote("PET")
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/10 |or
 step
 clicknpc Magpie##220720 |goto Hallowfall/0 60.42,60.22
-|tip Use the /pet emote.
+'|script DoEmote("PET")
+|tip Right click or use the /pet emote.
 Click Here to Continue |confirm |next |or
 '|achieve 40625/1 |or
 ]])
@@ -886,12 +917,11 @@ talk Haverd Sunhart##226051
 |tip Up on the platform.
 accept Ivory Tinderbox##82845 |goto Hallowfall/0 41.64,34.76 |instant
 step
-Wait for the Next Weekly Reset |complete not completedq(82749) or completedq(82813)
+Wait for the Next Weekly Reset |complete not completedq(82750) or completedq(82813)
 |tip To continue, you must wait for the next Tuesday reset.
 step
 talk Maera Ashyld##220718
 |tip This quest is only available after the weekly reset following the completion of {o}Time Found{} quest.
-|tip It should be available now. |only if not completedq(82749)
 accept Time Borrowed##82813 |goto Hallowfall/0 60.49,60.21
 step
 Kill enemies around this area

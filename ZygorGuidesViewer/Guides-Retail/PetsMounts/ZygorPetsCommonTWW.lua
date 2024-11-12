@@ -421,9 +421,30 @@ step
 collect Argos##221851 |goto Isle of Dorn/0 48.00,27.60
 step
 use Argos##221851
-Learn the "Argos" Battle Pet |learnpet Argos##4466
+learnpet Argos##4466
 ]])
 ZGV.BETAEND()
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\Baby Blizzard Bear",{
+patch='110002',
+source='Achievement','FeatOfStrength','Vendor',
+author="support@zygorguides.com",
+description="",
+keywords={"Beast"},
+pet=202,
+},[[
+step
+earn 10 Bronze Celebration Token##3100 |or
+'|complete haspet(202) |or
+step
+talk Storekeeper Reginald##229707
+|tip On the round platform.
+|tip You can also purchase this pet in Ironforge in The Forlorn Cavern.
+buy Baby Blizzard Bear##44819 |goto Tanaris/0 62.89,51.10 |or
+'|complete haspet(202) |or
+step
+use Baby Blizzard Bear##44819
+learnpet Baby Blizzard Bear##202
+]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\Bean",{
 patch='110002',
 source='Vendor',
@@ -449,7 +470,7 @@ Kram'an [City of Threads/0 49.60,26.60]
 Yaggi [City of Threads/0 49.60,26.20]
 step
 use Freshly Webbed Kebab##221850
-Learn the "Bean" Battle Pet |learnpet Bean##4464
+learnpet Bean##4464
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Battle Pets\\Beast Pets\\Bedrock Stonecharger",{
 patch='110002',
@@ -920,7 +941,7 @@ Locate Thunder |q 82007/3 |goto Hallowfall/0 62.00,20.80 |or
 '|complete haspet(4462)|or
 step
 clicknpc Beef##222373
-Locate Beans |q 82007/1 |goto Hallowfall/0 66.20,15.60 |or
+Locate Beef |q 82007/1 |goto Hallowfall/0 66.20,15.60 |or
 '|complete haspet(4462)|or
 step
 clicknpc Cap'n Elaena##222374

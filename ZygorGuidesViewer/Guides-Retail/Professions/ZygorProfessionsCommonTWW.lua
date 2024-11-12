@@ -31,11 +31,11 @@ buy 50 Gilded Vial##211806 |goto Dornogal/0 47.33,70.76 |or
 '|complete skill("Khaz Algar Alchemy") >= 26 |or |only if KulTiran
 '|complete skill("Khaz Algar Alchemy") >= 36 |or |only if Goblin
 step
-collect 50 Mycobloom##210796 |or
+collect 50 Mycobloom##210796 |or |usebank
 _Or_
-collect 50 Mycobloom##210797 |or
+collect 50 Mycobloom##210797 |or |usebank
 _Or_
-collect 50 Mycobloom##210798 |or
+collect 50 Mycobloom##210798 |or |usebank
 |tip Farm them with Herbalism or purchase them from the auction house.
 |loadguide "Profession Guides\\Herbalism\\Farming Guides\\Mycobloom (Azj-Kahet)"
 |loadguide "Profession Guides\\Herbalism\\Farming Guides\\Mycobloom (Hallowfall)"
@@ -53,7 +53,7 @@ create Neutralize Concoctions##427214,Khaz Algar Alchemy,27 |goto Dornogal/0 47.
 create Neutralize Concoctions##427214,Khaz Algar Alchemy,32 |goto Dornogal/0 47.10,70.48 |n |only if KulTiran
 create Neutralize Concoctions##427214,Khaz Algar Alchemy,42 |goto Dornogal/0 47.10,70.48 |n |only if Goblin
 |tip Use Neutralize Concoctions on your Healing Potions to gain Coreway Catalysts.
-collect 4 Coreway Catalyst##210815 |or
+collect 4 Coreway Catalyst##210815 |or |usebank
 '|complete skill("Khaz Algar Alchemy") >= 27 |or |only if default
 '|complete skill("Khaz Algar Alchemy") >= 32 |or |only if KulTiran
 '|complete skill("Khaz Algar Alchemy") >= 42 |or |only if Goblin
@@ -67,11 +67,11 @@ talk Darean##223644
 Train Petal Powder |learn Petal Powder##462122 |goto Dornogal/0 47.10,70.48
 stickystart "Collect_Arathor's_Spear_35"
 step
-collect 24 Mycobloom##210796 |or
+collect 24 Mycobloom##210796 |or |usebank
 _Or_
-collect 24 Mycobloom##210797 |or
+collect 24 Mycobloom##210797 |or |usebank
 _Or_
-collect 24 Mycobloom##210798 |or
+collect 24 Mycobloom##210798 |or |usebank
 |loadguide "Profession Guides\\Herbalism\\Farming Guides\\Mycobloom (Azj-Kahet)"
 |loadguide "Profession Guides\\Herbalism\\Farming Guides\\Mycobloom (Hallowfall)"
 |loadguide "Profession Guides\\Herbalism\\Farming Guides\\Mycobloom (Isle of Dorn)"
@@ -81,11 +81,11 @@ collect 24 Mycobloom##210798 |or
 '|complete skill("Khaz Algar Alchemy") >= 50 |or |only if Goblin
 step
 label "Collect_Arathor's_Spear_35"
-collect 72 Arathor's Spear##210808 |or
+collect 72 Arathor's Spear##210808 |or |usebank
 _Or_
-collect 72 Arathor's Spear##210809 |or
+collect 72 Arathor's Spear##210809 |or |usebank
 _Or_
-collect 72 Arathor's Spear##210810 |or
+collect 72 Arathor's Spear##210810 |or |usebank
 |loadguide "Profession Guides\\Herbalism\\Farming Guides\\Arathor's Spear (Hallowfall)" |notinsticky
 |loadguide "Profession Guides\\Herbalism\\Farming Guides\\Arathor's Spear (The Ringing Deeps)" |notinsticky
 '|complete skill("Khaz Algar Alchemy") >= 35 |or |only if default
@@ -186,7 +186,7 @@ buy 320 Echoing Flux##226202 |goto Dornogal/0 48.71,62.52 |or
 '|complete skill("Khaz Algar Blacksmithing") >= 20 |or |only if DarkIronDwarf or KulTiran
 '|complete skill("Khaz Algar Blacksmithing") >= 25 |or |only if LightforgedDraenei
 step
-collect 400 Bismuth##210930 |or
+collect 400 Bismuth##210930 |or |usebank
 |tip Farm them with Mining or purchase them from the auction house.
 |loadguide "Profession Guides\\Mining\\Farming Guides\\Bismuth (Azj-Kahet)"
 |loadguide "Profession Guides\\Mining\\Farming Guides\\Bismuth (Hallowfall)"
@@ -213,7 +213,7 @@ talk Darean##223644
 Train Dredger's Plate Breastplate |learn Dredger's Plate Breastplate##450259 |goto Dornogal/0 49.19,63.49
 stickystart "Collect_Core_Alloy_21"
 step
-collect 9 Bismuth##210930 |or
+collect 9 Bismuth##210930 |or |usebank
 |tip Farm them with Mining or purchase them from the auction house.
 |loadguide "Profession Guides\\Mining\\Farming Guides\\Bismuth (Azj-Kahet)"
 |loadguide "Profession Guides\\Mining\\Farming Guides\\Bismuth (Hallowfall)"
@@ -224,7 +224,7 @@ collect 9 Bismuth##210930 |or
 '|complete skill("Khaz Algar Blacksmithing") >= 31 |or |only if LightforgedDraenei
 step
 label "Collect_Core_Alloy_21"
-collect 6 Core Alloy##222417 |or
+collect 6 Core Alloy##222417 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Blacksmithing") >= 21 |or |only if default
 '|complete skill("Khaz Algar Blacksmithing") >= 26 |or |only if DarkIronDwarf or KulTiran
@@ -239,7 +239,7 @@ talk Darean##223644
 |tip Inside the building.
 Train Proficient Blacksmith's Hammer |learn Proficient Blacksmith's Hammer##450273 |goto Dornogal/0 49.19,63.49
 step
-collect 1 Core Alloy##222417 |or
+collect 1 Core Alloy##222417 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Blacksmithing") >= 22 |or |only if default
 '|complete skill("Khaz Algar Blacksmithing") >= 27 |or |only if DarkIronDwarf or KulTiran
@@ -255,7 +255,7 @@ talk Darean##223644
 Train Dredger's Developed Greatbelt |learn Dredger's Developed Greatbelt##450260 |goto Dornogal/0 49.19,63.49
 stickystart "Collect_Core_Alloy_26"
 step
-collect 2 Bismuth##210930 |or
+collect 2 Bismuth##210930 |or |usebank
 |tip Farm them with Mining or purchase them from the auction house.
 |loadguide "Profession Guides\\Mining\\Farming Guides\\Bismuth (Azj-Kahet)"
 |loadguide "Profession Guides\\Mining\\Farming Guides\\Bismuth (Hallowfall)"
@@ -266,7 +266,7 @@ collect 2 Bismuth##210930 |or
 '|complete skill("Khaz Algar Blacksmithing") >= 36 |or |only if LightforgedDraenei
 step
 label "Collect_Core_Alloy_26"
-collect 4 Core Alloy##222417 |or
+collect 4 Core Alloy##222417 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Blacksmithing") >= 26 |or |only if default
 '|complete skill("Khaz Algar Blacksmithing") >= 31 |or |only if DarkIronDwarf or KulTiran
@@ -281,7 +281,7 @@ talk Darean##223644
 |tip Inside the building.
 Train Proficient Blacksmith's Toolbox |learn Proficient Blacksmith's Toolbox##450274 |goto Dornogal/0 49.19,63.49
 step
-collect 1 Core Alloy##222417 |or
+collect 1 Core Alloy##222417 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Blacksmithing") >= 27 |or |only if default
 '|complete skill("Khaz Algar Blacksmithing") >= 32 |or |only if DarkIronDwarf or KulTiran
@@ -293,7 +293,7 @@ create 1 Proficient Blacksmith's Toolbox##450274,Khaz Algar Blacksmithing,37 |go
 |tip You need to stand next to an anvil to craft this.
 stickystart "Collect_Core_Alloy_31"
 step
-collect 2 Bismuth##210930 |or
+collect 2 Bismuth##210930 |or |usebank
 |tip Farm them with Mining or purchase them from the auction house.
 |loadguide "Profession Guides\\Mining\\Farming Guides\\Bismuth (Azj-Kahet)"
 |loadguide "Profession Guides\\Mining\\Farming Guides\\Bismuth (Hallowfall)"
@@ -304,7 +304,7 @@ collect 2 Bismuth##210930 |or
 '|complete skill("Khaz Algar Blacksmithing") >= 41 |or |only if LightforgedDraenei
 step
 label "Collect_Core_Alloy_31"
-collect 4 Core Alloy##222417 |or
+collect 4 Core Alloy##222417 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Blacksmithing") >= 31 |or |only if default
 '|complete skill("Khaz Algar Blacksmithing") >= 36 |or |only if DarkIronDwarf or KulTiran
@@ -320,7 +320,7 @@ talk Darean##223644
 Train Dredger's Developed Helm |learn Dredger's Developed Helm##450262 |goto Dornogal/0 49.19,63.49
 stickystart "Collect_Core_Alloy_41"
 step
-collect 20 Bismuth##210930 |or
+collect 20 Bismuth##210930 |or |usebank
 |tip Farm them with Mining or purchase them from the auction house.
 |loadguide "Profession Guides\\Mining\\Farming Guides\\Bismuth (Azj-Kahet)"
 |loadguide "Profession Guides\\Mining\\Farming Guides\\Bismuth (Hallowfall)"
@@ -331,7 +331,7 @@ collect 20 Bismuth##210930 |or
 '|complete skill("Khaz Algar Blacksmithing") >= 51 |or |only if LightforgedDraenei
 step
 label "Collect_Core_Alloy_41"
-collect 15 Core Alloy##222417 |or
+collect 15 Core Alloy##222417 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Blacksmithing") >= 41 |or |only if default
 '|complete skill("Khaz Algar Blacksmithing") >= 46 |or |only if DarkIronDwarf or KulTiran
@@ -347,14 +347,14 @@ talk Darean##223644
 Train Tempered Framework |learn Tempered Framework##450289 |goto Dornogal/0 49.19,63.49
 stickystart "Collect_Core_Alloy_50"
 step
-collect 9 Crystalline Powder##213610 |or
+collect 9 Crystalline Powder##213610 |or |usebank
 |tip Collect them from Khaz Algar profession nodes or purchase them from the auction house.
 '|complete skill("Khaz Algar Blacksmithing") >= 50 |or |only if default
 '|complete skill("Khaz Algar Blacksmithing") >= 55 |or |only if DarkIronDwarf or KulTiran
 '|complete skill("Khaz Algar Blacksmithing") >= 60 |or |only if LightforgedDraenei
 step
 label "Collect_Core_Alloy_50"
-collect 9 Core Alloy##222417 |or
+collect 9 Core Alloy##222417 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Blacksmithing") >= 50 |or |only if default
 '|complete skill("Khaz Algar Blacksmithing") >= 55 |or |only if DarkIronDwarf or KulTiran
@@ -448,7 +448,7 @@ talk Athodas##219104
 |tip Inside the inn
 Train Khaz Algar Cooking |skillmax Khaz Algar Cooking,100 |goto Dornogal/0 44.17,45.85
 step
-collect 170 Basically Beef##223512 |or
+collect 170 Basically Beef##223512 |or |usebank
 |tip Farm them from creatures all over Khaz Algar or purchase them from the auction house.
 '|complete skill("Khaz Algar Cooking") >= 25 |or |only if default
 '|complete skill("Khaz Algar Cooking") >= 40 |or |only if Pandaren
@@ -462,13 +462,13 @@ talk Athodas##219104
 Train Marinated Tenderloins |learn Marinated Tenderloin##445103 |goto Dornogal/0 44.17,45.85
 stickystart "Collect_Spiced_Meat_Stock_40"
 step
-collect 100 Portioned Steak##222738 |or
+collect 100 Portioned Steak##222738 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Cooking") >= 40 |or |only if default
 '|complete skill("Khaz Algar Cooking") >= 55 |or |only if Pandaren
 step
 label "Collect_Spiced_Meat_Stock_40"
-collect 50 Spiced Meat Stock##222739 |or
+collect 50 Spiced Meat Stock##222739 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Cooking") >= 40 |or |only if default
 '|complete skill("Khaz Algar Cooking") >= 55 |or |only if Pandaren
@@ -486,7 +486,7 @@ talk Athodas##219104
 |tip Inside the inn
 Train Tender Twilight Jerky |learn Tender Twilight Jerky##445093 |goto Dornogal/0 44.17,45.85
 step
-collect 120 Portioned Steak##222738 |or
+collect 120 Portioned Steak##222738 |or |usebank
 |tip Create them with cooking or purchase them from the auction house.
 '|complete skill("Khaz Algar Cooking") >= 50 |or |only if default
 '|complete skill("Khaz Algar Cooking") >= 65 |or |only if Pandaren
@@ -504,7 +504,7 @@ talk Athodas##219104
 |tip Inside the inn
 Train Stuffed Cave Peppers |learn Stuffed Cave Peppers##445106 |goto Dornogal/0 44.17,45.85
 step
-collect 200 Portioned Steak##222738 |or
+collect 200 Portioned Steak##222738 |or |usebank
 |tip Create them with cooking or purchase them from the auction house.
 '|complete skill("Khaz Algar Cooking") >= 60 |or |only if default
 '|complete skill("Khaz Algar Cooking") >= 75 |or |only if Pandaren
@@ -523,12 +523,12 @@ talk Athodas##219104
 |tip Inside the inn
 Train Jester's Board |learn Jester's Board##445110 |goto Dornogal/0 44.17,45.85
 step
-collect 400 Fresh Fillet##222741 |or
+collect 400 Fresh Fillet##222741 |or |usebank
 |tip Fillet caught fish or purchase them from the auction house.
 '|complete skill("Khaz Algar Cooking") >= 70 |or |only if default
 '|complete skill("Khaz Algar Cooking") >= 85 |or |only if Pandaren
 step
-collect 160 Portioned Steak##222738 |or
+collect 160 Portioned Steak##222738 |or |usebank
 |tip Create them with cooking or purchase them from the auction house.
 '|complete skill("Khaz Algar Cooking") >= 70 |or |only if default
 '|complete skill("Khaz Algar Cooking") >= 85 |or |only if Pandaren
@@ -570,13 +570,13 @@ talk Nagad##219085
 Train Khaz Algar Enchanting |skillmax Khaz Algar Enchanting,100 |goto Dornogal/0 52.90,71.32
 step
 talk Llande##219086
-collect 87 Enchanting Vellum##38682 |goto Dornogal/0 52.34,71.67 |or
+collect 87 Enchanting Vellum##38682 |goto Dornogal/0 52.34,71.67 |or |usebank
 |tip Use these to sell your enchants.
 '|complete skill("Khaz Algar Enchanting") >= 10 |or |only if default
 '|complete skill("Khaz Algar Enchanting") >= 15 |or |only if KulTiran
 '|complete skill("Khaz Algar Enchanting") >= 25 |or |only if BloodElf
 step
-collect 45 Storm Dust##219946 |or
+collect 45 Storm Dust##219946 |or |usebank
 |tip Disenchant Khaz Algar items or purchase them from the auction house.
 '|complete skill("Khaz Algar Enchanting") >= 10 |or |only if default
 '|complete skill("Khaz Algar Enchanting") >= 15 |or |only if KulTiran
@@ -590,7 +590,7 @@ step
 talk Nagad##219085
 Train Glimmering Critical Strike |learn Glimmering Critical Strike##445358 |goto Dornogal/0 52.90,71.32
 step
-collect 25 Storm Dust##219946 |or
+collect 25 Storm Dust##219946 |or |usebank
 |tip Disenchant Khaz Algar items or purchase them from the auction house.
 '|complete skill("Khaz Algar Enchanting") >= 15 |or |only if default
 '|complete skill("Khaz Algar Enchanting") >= 20 |or |only if KulTiran
@@ -604,7 +604,7 @@ step
 talk Nagad##219085
 Train Whisper of Silken Avoidance |learn Whisper of Silken Avoidance##445344 |goto Dornogal/0 52.90,71.32
 step
-collect 100 Storm Dust##219946 |or
+collect 100 Storm Dust##219946 |or |usebank
 |tip Disenchant Khaz Algar items or purchase them from the auction house.
 '|complete skill("Khaz Algar Enchanting") >= 25 |or |only if default
 '|complete skill("Khaz Algar Enchanting") >= 30 |or |only if KulTiran
@@ -618,7 +618,7 @@ step
 talk Nagad##219085
 Train Glimmering Mastery |learn Glimmering Mastery##445381 |goto Dornogal/0 52.90,71.32
 step
-collect 50 Storm Dust##219946 |or
+collect 50 Storm Dust##219946 |or |usebank
 |tip Disenchant Khaz Algar items or purchase them from the auction house.
 '|complete skill("Khaz Algar Enchanting") >= 35 |or |only if default
 '|complete skill("Khaz Algar Enchanting") >= 40 |or |only if KulTiran
@@ -631,7 +631,7 @@ step
 talk Nagad##219085
 Train Whisper of Armored Speed |learn Whisper of Armored Speed##445376 |goto Dornogal/0 52.90,71.32
 step
-collect 50 Storm Dust##219946 |or
+collect 50 Storm Dust##219946 |or |usebank
 |tip Disenchant Khaz Algar items or purchase them from the auction house.
 '|complete skill("Khaz Algar Enchanting") >= 40 |or |only if default
 '|complete skill("Khaz Algar Enchanting") >= 45 |or |only if KulTiran
@@ -645,14 +645,14 @@ talk Nagad##219085
 Train Enchanted Spearwood Wand |learn Enchanted Spearwood Wand##445324 |goto Dornogal/0 52.90,71.32
 stickystart "Collect_Codified_Greenwood_52"
 step
-collect 20 Storm Dust##219946 |or
+collect 20 Storm Dust##219946 |or |usebank
 |tip Disenchant Khaz Algar items or purchase them from the auction house.
 '|complete skill("Khaz Algar Enchanting") >= 52 |or |only if default
 '|complete skill("Khaz Algar Enchanting") >= 57 |or |only if KulTiran
 '|complete skill("Khaz Algar Enchanting") >= 67 |or |only if BloodElf
 step
 label "Collect_Codified_Greenwood_52"
-collect 4 Codified Greenwood##222555 |or
+collect 4 Codified Greenwood##222555 |or |usebank
 |tip Create them with Inscription or purchase them from the auction house.
 '|complete skill("Khaz Algar Enchanting") >= 52 |or |only if default
 '|complete skill("Khaz Algar Enchanting") >= 57 |or |only if KulTiran
@@ -665,7 +665,7 @@ step
 talk Nagad##219085
 Train Glimmering Versatility |learn Glimmering Versatility##445340 |goto Dornogal/0 52.90,71.32
 step
-collect 15 Storm Dust##219946 |or
+collect 15 Storm Dust##219946 |or |usebank
 |tip Disenchant Khaz Algar items or purchase them from the auction house.
 '|complete skill("Khaz Algar Enchanting") >= 55 |or |only if default
 '|complete skill("Khaz Algar Enchanting") >= 60 |or |only if KulTiran
@@ -678,7 +678,7 @@ step
 talk Nagad##219085
 Train Whisper of Silken Speed |learn Whisper of Silken Speed##445373 |goto Dornogal/0 52.90,71.32
 step
-collect 50 Storm Dust##219946 |or
+collect 50 Storm Dust##219946 |or |usebank
 |tip Disenchant Khaz Algar items or purchase them from the auction house.
 '|complete skill("Khaz Algar Enchanting") >= 60 |or |only if default
 '|complete skill("Khaz Algar Enchanting") >= 65 |or |only if KulTiran
@@ -691,7 +691,7 @@ step
 talk Nagad##219085
 Train Whisper of Armored Leech |learn Whisper of Armored Leech##445374 |goto Dornogal/0 52.90,71.32
 step
-collect 50 Storm Dust##219946 |or
+collect 50 Storm Dust##219946 |or |usebank
 |tip Disenchant Khaz Algar items or purchase them from the auction house.
 '|complete skill("Khaz Algar Enchanting") >= 65 |or |only if default
 '|complete skill("Khaz Algar Enchanting") >= 70 |or |only if KulTiran
@@ -789,7 +789,7 @@ buy Gyromatic Micro-Adjustor##10498 |goto Dornogal/0 49.30,55.62 |or 2
 '|complete skill("Khaz Algar Engineering") >= 30 |override |only if Goblin
 step
 Kill enemies around this area
-collect 85 Pile of Rusted Scrap##219150 |goto Isle of Dorn/0 63.70,43.15 |or
+collect 85 Pile of Rusted Scrap##219150 |goto Isle of Dorn/0 63.70,43.15 |or |usebank
 |tip These drop from mobs all over Khaz Algar.
 '|complete skill("Khaz Algar Engineering") >= 15 |or |only if default
 '|complete skill("Khaz Algar Engineering") >= 20 |or |only if KulTiran
@@ -800,7 +800,7 @@ create 17 Scour Through Scrap##447310,Khaz Algar Engineering,20 |goto Dornogal/0
 create 17 Scour Through Scrap##447310,Khaz Algar Engineering,30 |goto Dornogal/0 49.21,55.94 |only if Goblin
 |tip You may need to make more or less of these.
 step
-collect 200 Bismuth##210930 |or
+collect 200 Bismuth##210930 |or |usebank
 |tip Farm them with Mining or purchase them from the auction house.
 '|complete skill("Khaz Algar Engineering") >= 20 |or |only if default
 '|complete skill("Khaz Algar Engineering") >= 25 |or |only if KulTiran
@@ -809,14 +809,14 @@ step
 create 50 Handful of Bismuth Bolts##447336,Khaz Algar Engineering,80 total |goto Dornogal/0 49.21,55.94
 |tip You should have discovered this scouring scrap.
 step
-collect 80 Handful of Bismuth Bolts##221853 |or
+collect 80 Handful of Bismuth Bolts##221853 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Engineering") >= 40 |or |only if default
 '|complete skill("Khaz Algar Engineering") >= 45 |or |only if KulTiran
 '|complete skill("Khaz Algar Engineering") >= 55 |or |only if Goblin
 stickystart "Collect_Whimsical_Wiring_40"
 step
-collect 20 Gyrating Gear##221859 |or
+collect 20 Gyrating Gear##221859 |or |usebank
 |tip Create them with Engineering or purchase them from the auction house.
 |tip Each Gyrating Gear requires 1 Junk Bucket, 3 Bismuth, and 1 Aqirite.
 '|complete skill("Khaz Algar Engineering") >= 40 |or |only if default
@@ -824,7 +824,7 @@ collect 20 Gyrating Gear##221859 |or
 '|complete skill("Khaz Algar Engineering") >= 55 |or |only if Goblin
 step
 label "Collect_Whimsical_Wiring_40"
-collect 20 Whimsical Wiring##221856 |or
+collect 20 Whimsical Wiring##221856 |or |usebank
 |tip Create them with Engineering or purchase them from the auction house.
 |tip Each Whimsical Wiring requires 1 Frayed Wiring and 3 Bismuth.
 '|complete skill("Khaz Algar Engineering") >= 40 |or |only if default
@@ -1745,14 +1745,14 @@ step
 talk Brrigan##219090
 Train Khaz Algar Inscription |skillmax Khaz Algar Inscription,100 |goto Dornogal/0 48.76,70.90
 step
-collect 200 Luredrop##210799 |or
+collect 200 Luredrop##210799 |or |usebank
 |tip We will use these to make Ink later.
 |loadguide "Profession Guides\\Herbalism\\Farming Guides\\Luredrop (Azj-Kahet)"
 '|complete skill("Khaz Algar Inscription") >= 20 |or |only if default
 '|complete skill("Khaz Algar Inscription") >= 25 |or |only if KulTiran
 '|complete skill("Khaz Algar Inscription") >= 35 |or |only if Nightborne
 step
-collect 350 Mycobloom##210796 |or
+collect 350 Mycobloom##210796 |or |usebank
 |tip We will use these to make Ink later.
 |loadguide "Profession Guides\\Herbalism\\Farming Guides\\Mycobloom (Azj-Kahet)"
 |loadguide "Profession Guides\\Herbalism\\Farming Guides\\Mycobloom (Hallowfall)"
@@ -1777,14 +1777,14 @@ buy 900 Distilled Algari Freshwater##226205 |goto Dornogal/0 48.79,70.69 |or
 '|complete skill("Khaz Algar Inscription") >= 40 |or |only if Nightborne
 stickystart "Collect_Nacreous_Pigment_25"
 step
-collect 225 Luredrop Pigment##222612 |or
+collect 225 Luredrop Pigment##222612 |or |usebank
 |tip Mill herbs with inscription or purchase them from the auction house.
 '|complete skill("Khaz Algar Inscription") >= 25 |or |only if default
 '|complete skill("Khaz Algar Inscription") >= 30 |or |only if KulTiran
 '|complete skill("Khaz Algar Inscription") >= 40 |or |only if Nightborne
 step
 label "Collect_Nacreous_Pigment_25"
-collect 400 Nacreous Pigment##222618 |or
+collect 400 Nacreous Pigment##222618 |or |usebank
 |tip Mill herbs with inscription or purchase them from the auction house.
 '|complete skill("Khaz Algar Inscription") >= 25 |or |only if default
 '|complete skill("Khaz Algar Inscription") >= 30 |or |only if KulTiran
@@ -1800,14 +1800,14 @@ talk Brrigan##219090
 Train Boundless Cipher |learn Boundless Cipher##444191 |goto Dornogal/0 48.76,70.90
 stickystart "Collect_Arathor's_Spear_35"
 step
-collect 30 Apricate Ink##222615 |or
+collect 30 Apricate Ink##222615 |or |usebank
 |tip Create them with inscription or purchase them from the auction house.
 '|complete skill("Khaz Algar Inscription") >= 35 |or |only if default
 '|complete skill("Khaz Algar Inscription") >= 40 |or |only if KulTiran
 '|complete skill("Khaz Algar Inscription") >= 50 |or |only if Nightborne
 step
 label "Collect_Arathor's_Spear_35"
-collect 75 Arathor's Spear##210808 |or
+collect 75 Arathor's Spear##210808 |or |usebank
 |loadguide "Profession Guides\\Herbalism\\Farming Guides\\Arathor's Spear (Hallowfall)"
 |loadguide "Profession Guides\\Herbalism\\Farming Guides\\Arathor's Spear (The Ringing Deeps)"
 '|complete skill("Khaz Algar Inscription") >= 35 |or |only if default
@@ -1836,21 +1836,21 @@ buy 20 Fresh Parchment |goto Dornogal/0 48.79,70.69 |or 2
 '|complete skill("Khaz Algar Inscription") >= 50 |override |only if KulTiran
 '|complete skill("Khaz Algar Inscription") >= 60 |override |only if Nightborne
 step
-collect 10 Boundless Cipher##222558 |or
+collect 10 Boundless Cipher##222558 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Inscription") >= 45 |or |only if default
 '|complete skill("Khaz Algar Inscription") >= 50 |or |only if KulTiran
 '|complete skill("Khaz Algar Inscription") >= 60 |or |only if Nightborne
 stickystart "Collect_Viridescent_Spores_45"
 step
-collect 10 Apricate Ink##222615 |or
+collect 10 Apricate Ink##222615 |or |usebank
 |tip Create them with Inscription or purchase them from the auction house.
 '|complete skill("Khaz Algar Inscription") >= 45 |or |only if default
 '|complete skill("Khaz Algar Inscription") >= 50 |or |only if KulTiran
 '|complete skill("Khaz Algar Inscription") >= 60 |or |only if Nightborne
 step
 label "Collect_Viridescent_Spores_45"
-collect 50 Viridescent Spores##210808 |or
+collect 50 Viridescent Spores##210808 |or |usebank
 |tip Farm them from herbs with Herbalism or purchase them from the auction house.
 '|complete skill("Khaz Algar Inscription") >= 45 |or |only if default
 '|complete skill("Khaz Algar Inscription") >= 50 |or |only if KulTiran
@@ -1870,21 +1870,21 @@ buy 10 Fresh Parchment |goto Dornogal/0 48.79,70.69 |or 2
 '|complete skill("Khaz Algar Inscription") >= 55 |override |only if KulTiran
 '|complete skill("Khaz Algar Inscription") >= 65 |override |only if Nightborne
 step
-collect 5 Boundless Cipher##222558 |or
+collect 5 Boundless Cipher##222558 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Inscription") >= 50 |or |only if default
 '|complete skill("Khaz Algar Inscription") >= 55 |or |only if KulTiran
 '|complete skill("Khaz Algar Inscription") >= 65 |or |only if Nightborne
 stickystart "Collect_Viridescent_Spores_50"
 step
-collect 5 Apricate Ink##222615 |or
+collect 5 Apricate Ink##222615 |or |usebank
 |tip Create them with Inscription or purchase them from the auction house.
 '|complete skill("Khaz Algar Inscription") >= 50 |or |only if default
 '|complete skill("Khaz Algar Inscription") >= 55 |or |only if KulTiran
 '|complete skill("Khaz Algar Inscription") >= 65 |or |only if Nightborne
 step
 label "Collect_Viridescent_Spores_50"
-collect 25 Viridescent Spores##210808 |or
+collect 25 Viridescent Spores##210808 |or |usebank
 |tip Farm them from herbs with Herbalism or purchase them from the auction house.
 '|complete skill("Khaz Algar Inscription") >= 50 |or |only if default
 '|complete skill("Khaz Algar Inscription") >= 55 |or |only if KulTiran
@@ -1992,14 +1992,14 @@ buy 30 Glittering Glass##213399 |goto Dornogal/0 49.54,71.53 |or
 '|complete skill("Khaz Algar Jewelcrafting") >= 45 |or |only if Draenei
 stickystart "Collect_Crushed_Gemstones_30"
 step
-collect 5 Ambivalent Amber##212498 |or
+collect 5 Ambivalent Amber##212498 |or |usebank
 |tip Prospect them with Jewelcrafting or purchase them from the auction house.
 '|complete skill("Khaz Algar Jewelcrafting") >= 30 |or |only if default
 '|complete skill("Khaz Algar Jewelcrafting") >= 35 |or |only if KulTiran
 '|complete skill("Khaz Algar Jewelcrafting") >= 45 |or |only if Draenei
 step
 label "Collect_Crushed_Gemstones_30"
-collect 15 Crushed Gemstones##213219 |or
+collect 15 Crushed Gemstones##213219 |or |usebank
 |tip Crush prospected gems with Jewelcrafting or purchase them from the auction house.
 '|complete skill("Khaz Algar Jewelcrafting") >= 30 |or |only if default
 '|complete skill("Khaz Algar Jewelcrafting") >= 35 |or |only if KulTiran
@@ -2017,21 +2017,21 @@ Train Malleable Pendant |learn Malleable Pendant##435380 |goto Dornogal/0 49.51,
 stickystart "Collect_Stunning_Sapphire_50"
 stickystart "Collect_Crushed_Gemstones_50"
 step
-collect 30 Ambivalent Amber##212498 |or
+collect 30 Ambivalent Amber##212498 |or |usebank
 |tip Prospect them with Jewelcrafting or purchase them from the auction house.
 '|complete skill("Khaz Algar Jewelcrafting") >= 50 |or |only if default
 '|complete skill("Khaz Algar Jewelcrafting") >= 55 |or |only if KulTiran
 '|complete skill("Khaz Algar Jewelcrafting") >= 65 |or |only if Draenei
 step
 label "Collect_Stunning_Sapphire_50"
-collect 15 Stunning Sapphire##212508 |or
+collect 15 Stunning Sapphire##212508 |or |usebank
 |tip Prospect them with Jewelcrafting or purchase them from the auction house.
 '|complete skill("Khaz Algar Jewelcrafting") >= 50 |or |only if default
 '|complete skill("Khaz Algar Jewelcrafting") >= 55 |or |only if KulTiran
 '|complete skill("Khaz Algar Jewelcrafting") >= 65 |or |only if Draenei
 step
 label "Collect_Crushed_Gemstones_50"
-collect 30 Crushed Gemstones##213219 |or
+collect 30 Crushed Gemstones##213219 |or |usebank
 |tip Crush prospected gems with Jewelcrafting or purchase them from the auction house.
 '|complete skill("Khaz Algar Jewelcrafting") >= 50 |or |only if default
 '|complete skill("Khaz Algar Jewelcrafting") >= 55 |or |only if KulTiran
@@ -2162,14 +2162,14 @@ talk Marbb##219080
 Train Steelsmith's Apron |learn Steelsmith's Apron##444107 |goto Dornogal/0 54.29,58.46
 stickystart "Collect_Thunderous_Hide_40"
 step
-collect 20 Gloom Chitin##212667 |or
+collect 20 Gloom Chitin##212667 |or |usebank
 |tip Farm them with Skinning or purchase them from the auction house.
 |loadguide "Profession Guides\\Skinning\\Farming Guides\\Gloom Chitin (Azj-Kahet)"
 '|complete skill("Khaz Algar Skinning") >= 40 |or |only if default
 '|complete skill("Khaz Algar Skinning") >= 45 |or |only if KulTiran
 step
 label "Collect_Thunderous_Hide_40"
-collect 1 Thunderous Hide##212670 |or
+collect 1 Thunderous Hide##212670 |or |usebank
 |tip Farm it with Skinning or purchase them from the auction house.
 |loadguide "Profession Guides\\Skinning\\Farming Guides\\Thunderous Hide (Isle of Dorn)"
 '|complete skill("Khaz Algar Skinning") >= 40 |or |only if default
@@ -2689,7 +2689,7 @@ buy 20 Mosswool Thread##224764 |goto Dornogal/0 54.78,63.91 |or 2
 '|complete skill("Khaz Algar Tailoring") >= 35 |override |only if default
 '|complete skill("Khaz Algar Tailoring") >= 40 |override |only if KulTiran
 step
-collect 20 Weavercloth Bolt##222806 |or
+collect 20 Weavercloth Bolt##222806 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Tailoring") >= 35 |or |only if default
 '|complete skill("Khaz Algar Tailoring") >= 40 |or |only if KulTiran
@@ -2706,7 +2706,7 @@ buy 30 Mosswool Thread##224764 |goto Dornogal/0 54.78,63.91 |or 2
 '|complete skill("Khaz Algar Tailoring") >= 45 |override |only if default
 '|complete skill("Khaz Algar Tailoring") >= 50 |override |only if KulTiran
 step
-collect 20 Weavercloth Bolt##222806 |or
+collect 20 Weavercloth Bolt##222806 |or |usebank
 |tip You created these in a previous step.
 '|complete skill("Khaz Algar Tailoring") >= 45 |or |only if default
 '|complete skill("Khaz Algar Tailoring") >= 50 |or |only if KulTiran

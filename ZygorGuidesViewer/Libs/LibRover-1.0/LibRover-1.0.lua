@@ -5949,6 +5949,30 @@ do -- Mole Machine handler
 
 end
 
+local bad_dhs_maps = { -- Dalaran Hearthstone: never use from Dala or class halls
+	[625]=1,
+	[626]=1,[627]=1,[628]=1,[629]=1, -- dalaran l
+	[695]=1, -- skyhold
+	[717]=1, -- dreadscar rift
+	[718]=1, -- dreadscar rift warlock intro
+	[715]=1, -- emerald dreamway
+	[734]=1, [735]=1, -- hall of the guardian
+	[672]=1, [673]=1, [674]=1, [675]=1, -- mardum, the shattered abyss c
+	[719]=1, [720]=1, [721]=1, -- mardum, the shattered abyss
+	[702]=1, -- netherlight temple
+	[747]=1, -- the dreamgrove
+	[739]=1, -- trueshot lodge
+	[725]=1, -- the maelstrom l a
+	[726]=1, -- the maelstrom l
+	[709]=1, -- the wandering isle l
+	[24]=1, -- deadwind pass
+}
+
+function Lib:ValidDHSMap()
+	return not bad_dhs_maps[ZGV.CurrentMapID]
+end
+
+
 --[[
 function Lib:Sha2Data()
 	LibRover.SHA2TIME=debugprofilestop()

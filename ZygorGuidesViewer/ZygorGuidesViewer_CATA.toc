@@ -1,4 +1,4 @@
-## Interface: 40400
+## Interface: 40401
 ## Title: |cffff0000Zygor Guide Viewer (Retail)|r
 ## Notes: This version of Zygor is not correct for this server.
 ## Author: Zygor Guides

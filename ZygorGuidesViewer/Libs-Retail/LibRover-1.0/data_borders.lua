@@ -98,7 +98,7 @@ data.basenodes.borders = --[[LIBROVER]] {
 		"Tirisfal Glades 84.6,70.3 -x- Western Plaguelands 29.7,57.3",
 		"Western Plaguelands 69.1,50.2 -x- Eastern Plaguelands 9.3,66.1",
 		"Ghostlands 47.8,13.9 -x- Eversong Woods 48.5,90.4",
-		"Eversong Woods 56.4,52.0 -x- Silvermoon City 72.7,86.0",
+		"Eversong Woods 56.66,49.60 <radius:30> -x- Silvermoon City 72.49,85.26 <radius:30>",
 		"Dun Morogh 60.46,33.35 <border_in_flight:true> -x- Ironforge 18.02,82.20 <border_in_flight:true> {title_atob:Enter Ironforge through the gate} {title_btoa:Leave Ironforge through the gate}",
 		--"Tirisfal Glades 61.9,65.0 -x- Undercity 66.3,6.8",
 		"Tirisfal Glades 61.9,65.0 -x- Tirisfal Glades 61.85,65.2 <region:undercitycourt>",

@@ -75,10 +75,31 @@ Earn the "Glory of the Dragonflight Hero" Achievement |achieve 16295
 step
 collect Shellack##192784 |or
 |tip This may be an item in your bags, in your mailbox, or in your Mounts collection as a gift to right click and unwrap.
-'|learnmount Shellack##374155 |or
+'|complete hasmount(374155) |or
 step
 use Shellack##192784
 learnmount Shellack##374155
+]])
+ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Ground Mounts\\Achievement Mounts\\Taivan",{
+author="support@zygorguides.com",
+description="You don't have to be what the world expects you to be. Be who Taivan knows you *can* be.",
+mounts={210142},
+mounttype='Ground',
+startlevel=60,
+keywords={"Dragonflight"},
+patch='100002',
+},[[
+step
+achieve 19458 |or
+|tip This achievement may not be possible to obtain anymore.
+'|complete hasmount(210142) |or
+step
+collect Good Boy's Leash##210142 |or
+|tip This may be an item in your bags, in your mailbox, or in your Mounts collection as a gift to right click and unwrap.
+'|learnmount Taivan##210142 |or
+step
+use Good Boy's Leash##210142
+learnmount Taivan##210142
 ]])
 ZygorGuidesViewer:RegisterGuide("Pets & Mounts Guides\\Mounts\\Flying Mounts\\Blizzard Store Mounts\\Jade, Bright Foreseer",{
 author="support@zygorguides.com",

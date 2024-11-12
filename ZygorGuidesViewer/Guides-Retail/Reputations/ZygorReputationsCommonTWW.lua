@@ -92,8 +92,24 @@ step
 Reach Renown Level 10 with the Council of Dornogal |complete factionrenown(2590) >= 10
 |tip Complete daily quests, weekly quests, and zone quests in the Isle of Dorn to gain renown.
 step
+talk Auditor Balwurz##223728
+|tip Inside the building.
+accept Assistant Councilmember##82347 |goto Dornogal/0 39.09,24.16
+|tip If this quest is not available, skip this step.
+step
+talk Elma##217248
+accept Attention-Getter##82781 |goto Isle of Dorn/0 56.71,52.36
+step
+talk Elma##217248
+turnin Attention-Getter##82781 |goto Isle of Dorn/0 56.71,52.36
+step
 Reach Renown Level 11 with the Council of Dornogal |complete factionrenown(2590) >= 11
 |tip Complete daily quests, weekly quests, and zone quests in the Isle of Dorn to gain renown.
+step
+talk Auditor Balwurz##223728
+|tip Inside the building.
+accept Carved Crests##82349 |goto Dornogal/0 39.09,24.16
+|tip If this quest is not available, skip this step.
 step
 Reach Renown Level 12 with the Council of Dornogal |complete factionrenown(2590) >= 12
 |tip Complete daily quests, weekly quests, and zone quests in the Isle of Dorn to gain renown.
@@ -321,6 +337,12 @@ step
 Reach Renown Level 14 with Hallowfall Arathi |complete factionrenown(2570) >= 14
 |tip Complete daily quests, weekly quests, and zone quests in Hallowfall to gain renown.
 step
+talk Auralia Steelstrike##213145 |goto Hallowfall/0 42.35,55.00 |only if default
+talk Auralia Steelstrike##213145 |goto Hallowfall/0 41.27,53.05 |only if completedq(82218)
+|tip Inside the tent. |only if completedq(82218)
+accept Another Rare Key##82398
+|tip If this quest is not available, skip this step.
+step
 Reach Renown Level 15 with Hallowfall Arathi |complete factionrenown(2570) >= 15
 |tip Complete daily quests, weekly quests, and zone quests in Hallowfall to gain renown.
 step
@@ -412,6 +434,14 @@ accept A Flickering Candle##82371 |goto The Ringing Deeps/0 47.30,32.92
 step
 Reach Renown Level 9 with The Assembly of the Deeps |complete factionrenown(2594) >= 9
 |tip Complete daily quests, weekly quests, and zone quests in The Ringing Deeps to gain renown.
+step
+talk Waxmonger Squick##221390
+accept Take Candle!##85539 |goto The Ringing Deeps/0 47.30,32.92
+|tip If this quest is not available, skip this step.
+step
+talk Waxmonger Squick##221390
+accept Crests##82370 |goto The Ringing Deeps/0 47.30,32.92
+|tip If this quest is not available, skip this step.
 step
 Reach Renown Level 10 with The Assembly of the Deeps |complete factionrenown(2594) >= 10
 |tip Complete daily quests, weekly quests, and zone quests in The Ringing Deeps to gain renown.
@@ -535,6 +565,10 @@ accept Power, Etched in the Deep##82433 |goto Azj-Kahet/0 55.33,41.22
 step
 Reach Renown Level 13 with The Severed Threads |complete factionrenown(2600) >= 13
 |tip Complete daily quests, weekly quests, and zone quests in Azj-Kahet to gain renown.
+step
+talk Lady Vinazian##223750
+accept Unlock a Reward##82434 |goto Azj-Kahet/0 55.33,41.22
+|tip If this quest is not available, skip this step.
 step
 Reach Renown Level 14 with The Severed Threads |complete factionrenown(2600) >= 14
 |tip Complete daily quests, weekly quests, and zone quests in Azj-Kahet to gain renown.

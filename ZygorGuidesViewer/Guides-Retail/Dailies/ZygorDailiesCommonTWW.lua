@@ -753,7 +753,7 @@ Rally the Arathi Group |q 82583/2 |goto Hallowfall/0 56.16,33.63 |count 6
 |next "TWW_World_Quest_Emissaries"
 step
 label quest-82206
-accept Into Shadows##82206 |goto Hallowfall/0 49.40,50.04
+accept Into Shadows##82206 |goto Hallowfall/0 67.47,44.51
 |tip You will accept this quest automatically.
 step
 talk Venrie Flitter##223105
@@ -1080,23 +1080,20 @@ clicknpc Arathi Orphan##218493
 |tip Hit one of the targets with a rock using the button on your vehicle bar.
 Play with the Orphans |q 82288/1 |goto Hallowfall/0 41.91,55.52 |count 1
 step
-talk Arathi Orphan##218493
-Select _"I can play."_ |gossip 122374
-|tip Walk along the fence without falling off around the front and to the side of the building.
-|tip Click the orphan at the end of the fence.
-Play with the Orphans |q 82288/1 |goto Hallowfall/0 42.00,55.63 |count 2
-Walk the fence to this spot [Hallowfall/0 41.70,55.29]
+clicknpc Arathi Orphan##218493
+Select _"I can play."_ |gossip 122367
+|tip Use the abilities on your bar until the orphans "slay" you.
+Play with the Orphans |q 82288/1 |goto Hallowfall/0 42.02,55.43 |count 2
+step
+clicknpc Arathi Orphan##218456
+|tip They run in a circle around the fence.
+Play with the Orphans |q 82288/1 |goto Hallowfall/0 41.95,55.02 |count 3
 step
 talk Arathi Orphan##218493
 Select _"I can play."_ |gossip 121459
 |tip Find the hiding orphan.
-Play with the Orphans |q 82288/1 |goto Hallowfall/0 41.83,55.26 |count 3
+Play with the Orphans |q 82288/1 |goto Hallowfall/0 41.83,55.26 |count 4
 The orphan hides at [Hallowfall/0 41.65,54.54]
-step
-clicknpc Arathi Orphan##218493
-Select _"I can play."_ |gossip 122367
-|tip Use the abilities on your bar until the orphans "slay" you.
-Play with the Orphans |q 82288/1 |goto Hallowfall/0 42.02,55.43 |count 4
 |next "TWW_World_Quest_Emissaries"
 step
 label "TWW_World_Quest_Emissaries"
@@ -1338,7 +1335,7 @@ click Climbing Gear
 Acquire the Climbing Gear |q 82237/1 |goto Isle of Dorn/0 56.68,42.72
 step
 click Handhold
-Find a Handhold on the Cliff |q 82237/2 |goto Isle of Dorn/0 56.60,42.73
+Find a Handhold on the Cliff |q 82237/2 |goto Isle of Dorn/0 56.51,43.30
 step
 click Ancient Celestite+
 |tip They look like large blue crystals on the rock face.
@@ -2582,8 +2579,9 @@ areapoiid=8063,
 patch='110002',
 },[[
 step
-talk Gnawbles##216164
-accept Gearing Up for Trouble##83333 |goto The Ringing Deeps/0 47.66,35.29
+label "Accept_Weekly_Quest"
+clicknpc Speaker Kuldas##217128
+accept Gearing Up for Trouble##83333 |goto The Ringing Deeps/0 47.50,32.03
 step
 clicknpc Speaker Kuldas##217128
 Select _"Let's go do some maintenance! <Awakening The Machine.>"_ |gossip 120609
@@ -2673,8 +2671,12 @@ click Awakened Cache##464938
 Loot the Awakened Cache |q 84647 |future |goto The Ringing Deeps/0 47.55,31.97
 |only if completedq(84634)
 step
-talk Gnawbles##216164
-turnin Gearing Up for Trouble##83333 |goto The Ringing Deeps/0 47.66,35.29
+clicknpc Speaker Kuldas##217128
+turnin Gearing Up for Trouble##83333 |goto The Ringing Deeps/0 47.50,32.03
+step
+You have completed Awakening the Machine this week
+|tip This guide will reset when it becomes available again.
+'|complete not completedq(83333) |next "Accept_Weekly_Quest"
 ]])
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\The War Within (70-80)\\Weekly Meta Quests",{
 author="support@zygorguides.com",
@@ -2700,19 +2702,20 @@ accept Archives: The First Disc##82678 |goto Dornogal/0 46.29,49.28 |only if def
 accept Archives: Seeking History##82679 |goto Dornogal/0 46.29,49.28 |only if not completedq(82678)
 step
 talk Archivist Frithrun##226919
-accept A Call to Battle##83345 |goto Dornogal/0 46.53,49.28 |only if questactive({skiptime=true},83345)
-accept Emissary of War##83347 |goto Dornogal/0 46.53,49.28 |only if questactive({skiptime=true},83347)
-accept The Very Best##83357 |goto Dornogal/0 46.53,49.28 |only if questactive({skiptime=true},83357)
-accept A Shattered Path Through Time##83359 |goto Dornogal/0 46.53,49.28 |only if questactive({skiptime=true},83359)
-accept A Shrouded Path Through Time##83362 |goto Dornogal/0 46.53,49.28 |only if questactive({skiptime=true},83362)
-accept A Burning Path Through Time##83363 |goto Dornogal/0 46.53,49.28 |only if questactive({skiptime=true},83363)
-accept A Savage Path Through Time##83364 |goto Dornogal/0 46.53,49.28 |only if questactive({skiptime=true},83364)
-accept A Frozen Path Through Time##83365 |goto Dornogal/0 46.53,49.28 |only if questactive({skiptime=true},83365)
-accept The World Awaits##83366 |goto Dornogal/0 46.53,49.28 |only if questactive({skiptime=true},83366)
-accept A Call to Delves##84776 |goto Dornogal/0 46.53,49.28 |only if questactive({skiptime=true},84776)
+accept A Call to Battle##83345 |goto Dornogal/0 46.53,49.28 |only if questactive(83345)
+accept Emissary of War##83347 |goto Dornogal/0 46.53,49.28 |only if questactive(83347)
+accept The Very Best##83357 |goto Dornogal/0 46.53,49.28 |only if questactive(83357)
+accept The Arena Calls##83358 |goto Dornogal/0 46.53,49.28 |only if questactive(83358)
+accept A Shattered Path Through Time##83359 |goto Dornogal/0 46.53,49.28 |only if questactive(83359)
+accept A Shrouded Path Through Time##83362 |goto Dornogal/0 46.53,49.28 |only if questactive(83362)
+accept A Burning Path Through Time##83363 |goto Dornogal/0 46.53,49.28 |only if questactive(83363)
+accept A Savage Path Through Time##83364 |goto Dornogal/0 46.53,49.28 |only if questactive(83364)
+accept A Frozen Path Through Time##83365 |goto Dornogal/0 46.53,49.28 |only if questactive(83365)
+accept The World Awaits##83366 |goto Dornogal/0 46.53,49.28 |only if questactive(83366)
+accept A Call to Delves##84776 |goto Dornogal/0 46.53,49.28 |only if questactive(84776)
 |tip Sometimes quest detection isn't reported properly for this NPC.
 |tip Accept what you can and then skip this step.
-|only if questactive({skiptime=true},83357,83359,"83362-83366",83345,83347,84776)
+|only if questactive(83357,83358,83359,"83362-83366",83345,83347,84776)
 step
 talk Biergoth##226623
 |autoacceptany 83436,83443,83457,83458,83459,83465,83469,83432
@@ -2996,6 +2999,10 @@ step
 Defeat #5# Players in a Pet Battle |q 83357/1
 |tip Challenge and defeat 5 other players in pet combat.
 |only if haveq(83357)
+step
+Defeat #10# Arena Skirmish Battles |q 83358/1
+|tip Join arena skirmishes and win 10 times.
+|only if haveq(83358)
 stickystart "Complete_World_Quests"
 step
 Progress Further in the Campaign to Unlock The Archives |q 82678/1 |goto Vault of Memory/0 49.91,60.70
@@ -3079,6 +3086,7 @@ turnin Archives: Seeking History##82679 |goto Vault of Memory/0 50.76,61.62 |onl
 step
 talk Archivist Frithrun##226919
 turnin The Very Best##83357 |goto Dornogal/0 46.53,49.28 |only if haveq(83357) or completedq(83357)
+turnin The Arena Calls##83358 |goto Dornogal/0 46.53,49.28 |only if haveq(83358) or completedq(83358)
 turnin A Call to Battle##83345 |goto Dornogal/0 46.53,49.28 |only if haveq(83345) or completedq(83345)
 turnin Emissary of War##83347 |goto Dornogal/0 46.53,49.28 |only if haveq(83347) or completedq(83347)
 turnin A Shattered Path Through Time##83359 |goto Dornogal/0 46.53,49.28 |only if haveq(83359) or completedq(83359)
@@ -3088,7 +3096,7 @@ turnin A Savage Path Through Time##83364 |goto Dornogal/0 46.53,49.28 |only if h
 turnin A Frozen Path Through Time##83365 |goto Dornogal/0 46.53,49.28 |only if haveq(83365) or completedq(83365)
 turnin The World Awaits##83366 |goto Dornogal/0 46.53,49.28 |only if haveq(83366) or completedq(83366)
 turnin A Call to Delves##84776 |goto Dornogal/0 46.53,49.28 |only if haveq(84776) or completedq(84776)
-|only if haveq(83357,83359,"83362-83366",83345,83347,84776) or completedq(83357,83359,"83362-83366",83345,83347,84776)
+|only if haveq(83357,83358,83359,"83362-83366",83345,83347,84776) or completedq(83357,83358,83359,"83362-83366",83345,83347,84776)
 step
 talk Biergoth##226623
 turnin Darkflame Cleft##83443 |goto Dornogal/0 46.74,48.29 |only if haveq(83443) or completedq(83443)
@@ -3103,10 +3111,9 @@ turnin Cinderbrew Meadery##83436 |goto Dornogal/0 46.74,48.29 |only if haveq(834
 step
 You have completed the weekly quest this week
 |tip This guide will reset when another becomes available.
-'|complete not completedq(82678,82679,83345,83347,83357,83359,84776,"83362-83366",83443,"83457-83459",83465,83469,83432,83436) |next "Begin_Weekly_Quest"
-'|complete not completedq(82452,82453,82458,"82482-82512",82516,82659) |next "Begin_Weekly_Quest" |only if not questactive(82678,82679) and not completedq(82678,82679)
+Test |complete not completedq(82678,83345,83347,83357,83358,83359,84776,"83362-83366",83443,"83457-83459",83465,83469,83432,83436) |next "Begin_Weekly_Quest"
+Test |complete not completedq(82452,82453,82458,"82482-82512",82516,82659) |next "Begin_Weekly_Quest" |only if not questactive(82678,82679) and not completedq(82678,82679)
 ]])
-ZGV.BETASTART()
 ZygorGuidesViewer:RegisterGuide("Daily Guides\\The War Within (70-80)\\Spreading the Light Keyflame Weekly Quests",{
 author="support@zygorguides.com",
 startlevel=80,
@@ -3148,6 +3155,7 @@ click Lesser Keyflame
 turnin Web of Manipulation - Activate##79383 |goto Hallowfall/0 63.32,29.43
 step
 talk Erol Ellimoore##206150
+|tip He runs to this location.
 |autoacceptany 79216,79173
 Accept the Daily Quest |complete haveq(79216,79173) or completedq(79216,79173) |goto Hallowfall/0 63.21,29.42
 step
@@ -3183,6 +3191,7 @@ click Lesser Keyflame
 turnin Right Between Gyro-Optics - Activate##76599 |goto Hallowfall/0 65.39,28.10
 step
 talk Auebry Irongear##206441
+|tip She runs to this location.
 |autoacceptany 79158,76733,76600
 Accept the Daily Quest |complete haveq(79158,76733,76600) or completedq(79158,76733,76600) |goto Hallowfall/0 65.25,28.05
 step
@@ -3323,7 +3332,7 @@ step
 click Shadowrooted Vine##206820+
 |tip Click weeds and run away to pull them.
 |tip Be sure to have the tendril targeted.
-collect 5 Dark-Nurtured Scallions##206601 |q 76394/2 |goto Hallowfall/0 63.99,32.27
+collect 5 Dark-Nurtured Scallions##206601 |q 76394/1 |goto Hallowfall/0 63.99,32.27
 |only if haveq(76394) or completedq(76394)
 step
 talk Marisa Korwahl##206151
@@ -3333,7 +3342,9 @@ buy Twilight Spice##211475 |q 76394/3 |goto Hallowfall/0 63.14,28.41
 step
 kill Kobyss Harvester##214389+
 |tip You can find them all over the waterway.
-collect 10 Shadowblind Grouper##211474 |q 76394/1 |goto Hallowfall/0 63.13,24.76
+click Shadowblind Grouper+
+|tip They look like fish laying in the water along the waterway.
+collect 10 Shadowblind Grouper##211474 |q 76394/2 |goto Hallowfall/0 63.13,24.76
 |only if haveq(76394) or completedq(76394)
 step
 talk Chef Dinaire##206533
@@ -3499,6 +3510,7 @@ Find Lynx Kitten Cap'n Alaena |q 82007/4 |goto Hallowfall/0 66.82,21.18
 |only if haveq(82007)
 step
 Enter the cave |goto Hallowfall/0 65.91,18.69 < 15 |walk
+use Attica's Cave Torch##219198
 Activate Attica's Cave Torch |q 76169/1 |goto Hallowfall/0 66.20,16.10
 |only if haveq(76169) or completedq(76169)
 stickystart "Collect_Dauntless_Draught"
@@ -3506,7 +3518,7 @@ step
 talk "Peevish" Paeton Berncort##205797
 Select _"Attica asked me to find you."_ |gossip 121304
 |tip Walk near Shadowy Forms until one becomes friendly.
-|tip Check this location first.
+|tip Look for the one with a yellow quest ring below it.
 Locate Peevish Paeton Berncort |q 76169/2 |goto Hallowfall/0 65.18,16.60
 |only if haveq(76169) or completedq(76169)
 step
@@ -3573,4 +3585,3 @@ You have completed the weekly keyflame quests
 |tip You can prepare for next week ahead of time by farming another 24 Radiant Remnants.
 '|complete not completedq(76169,76394,76588,76600,76733,76997,78656,78915,78933,78972,79158,79173,79216,79346,80004,80562,81574,81632) |next "Begin_Weekly_Quests"
 ]])
-ZGV.BETAEND()

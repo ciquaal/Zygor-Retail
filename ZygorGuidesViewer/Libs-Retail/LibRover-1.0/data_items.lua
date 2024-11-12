@@ -110,7 +110,7 @@ data.portkeys = { -- smile if you're a muggle
 	--------------
 	--- LEGION ---
 	--------------
-	{item=140192, destination="Dalaran L/10 60.92,44.72", cost=30, toy=true, cooldown=1200, mode="dhearth", cond=function() local m=ZGV.CurrentMapID return m~=625 and m~=626 and m~=627 and m~=628 and m~=629 and m~=695 and m~=717 and m~=718 and m~=715 and m~=734 and m~=735 and m~=672 and m~=673 and m~=674 and m~=675 and m~=719 and m~=720 and m~=721 and m~=702 and m~=747 and m~=739 and m~=725 and m~=726 and m~=709 and m~=24 end}, -- Dalaran Hearthstone: never use from Dala or class halls
+	{item=140192, destination="Dalaran L/10 60.92,44.72", cost=30, toy=true, cooldown=1200, mode="dhearth", cond=function() return (LibRover:ValidDHSMap() and (IsQuestFlaggedCompleted(44184) or IsQuestFlaggedCompleted(44663))) end}, -- Dalaran Hearthstone: never use from Dala or class halls
 	{item=141605, destination="_TAXIWHISTLE", cost=15, cooldown=60, mode="whistle", cond=function() return ZGV.LibRover.TaxiWhistlePredictor:IsOnValidMap() end }, -- Flight Master's Whistle
 
 
@@ -174,11 +174,44 @@ data.portkeys = { -- smile if you're a muggle
 	
 	-- Mole Machine, Broken Shore
 	{spell=265225, destination="Broken Shore/0 71.69,47.99", cost=90, cooldown=1800, cond=function() return IsQuestFlaggedCompleted(53589) end, title="Use your Mole Machine and select Broken Isles, then Broken Shore."},
+
+	-- Zalamar Invasion, Zandalar
+	{spell=265225, destination="Nazmir/0 34.34,45.13", cost=90, cooldown=1800, cond=function() return IsQuestFlaggedCompleted(80099) end, title="Use your Mole Machine and select Zandalar, then Zalamar Invasion."},	
+
+	-- Xibala Incursion, Zandalar
+	{spell=265225, destination="Zuldazar/0 38.24,72.37", cost=90, cooldown=1800, cond=function() return IsQuestFlaggedCompleted(80100) end, title="Use your Mole Machine and select Zandalar, then Xibala Incursion."},	
+
+	-- Tidebreak Summit, Kul Tiras
+	{spell=265225, destination="Stormsong Valley/0 64.22,29.44", cost=90, cooldown=1800, cond=function() return IsQuestFlaggedCompleted(80102) end, title="Use your Mole Machine and select Kul Tiras, then Tidebreak Summit."},	
+
+	-- Wailing Tideways, Kul Tiras
+	{spell=265225, destination="Tiragarde Sound/0 88.22,71.53", cost=90, cooldown=1800, cond=function() return IsQuestFlaggedCompleted(80101) end, title="Use your Mole Machine and select Kul Tiras, then Wailing Tideways."},
+
+	-- The Eternal Forge, The Shadowlands
+	{spell=265225, destination="Bastion/0 51.75,13.12", cost=90, cooldown=1800, cond=function() return IsQuestFlaggedCompleted(80105) end, title="Use your Mole Machine and select The Shadowlands, then The Eternal Forge."},	
+
+	-- Soryn's Meadow, The Shadowlands
+	{spell=265225, destination="Ardenweald/0 66.46,50.57", cost=90, cooldown=1800, cond=function() return IsQuestFlaggedCompleted(80106) end, title="Use your Mole Machine and select The Shadowlands, then Soryn's Meadow."},	
+
+	-- Scorched Crypt, The Shadowlands
+	{spell=265225, destination="Revendreth/0 19.91,38.78", cost=90, cooldown=1800, cond=function() return IsQuestFlaggedCompleted(80104) end, title="Use your Mole Machine and select The Shadowlands, then Scorched Crypt."},	
+
+	-- Valley of a Thousand Legs, The Shadowlands
+	{spell=265225, destination="Maldraxxus/0 53.51,59.78", cost=90, cooldown=1800, cond=function() return IsQuestFlaggedCompleted(80103) end, title="Use your Mole Machine and select The Shadowlands, then Valley of a Thousand Legs."},
+
+	-- Obsidian Rest, Dragon Isles
+	{spell=265225, destination="Zaralek Cavern/0 52.71,27.67", cost=90, cooldown=1800, cond=function() return IsQuestFlaggedCompleted(80109) end, title="Use your Mole Machine and select Dragon Isles, then Obsidian Rest."},
+
+	-- Vakthros Summit, Dragon Isles
+	{spell=265225, destination="The Azure Span/0 80.09,38.97", cost=90, cooldown=1800, cond=function() return IsQuestFlaggedCompleted(80108) end, title="Use your Mole Machine and select Dragon Isles, then Vakthros Summit."},
+
+	-- The Slagmire, Dragon Isles
+	{spell=265225, destination="The Waking Shores/0 32.36,54.90", cost=90, cooldown=1800, cond=function() return IsQuestFlaggedCompleted(80107) end, title="Use your Mole Machine and select Dragon Isles, then The Slagmire."},
+
+
 	
 	-- Alluring Bloom
 	{item=169862, destination="Stormsong Valley/0 62.89,26.52", cost=15, cooldown=60, cond=function() local m=ZGV.CurrentMapID return m==942 end},
-
-
 
 	-------------------
 	--- SHADOWLANDS ---
